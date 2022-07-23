@@ -17,16 +17,18 @@ namespace FishingRod
         {
             data.biteImage = so.data.biteImage;
             data.biteSprite = so.data.biteSprite;
-            
+
             data.rodImage = so.data.rodImage;
             data.rodSprite = so.data.rodSprite;
-            
+
             data.hookImage = so.data.hookImage;
             data.hookSprite = so.data.hookSprite;
-            
+
             data.maxWeight = so.data.maxWeight;
             data.maxLength = so.data.maxLength;
-            data.speed = so.data.speed;
+
+            data.verticalSpeed = so.data.verticalSpeed;
+            data.horizontalSpeed = so.data.horizontalSpeed;
 
             OnSpriteChanged?.Invoke();
             OnStatsChanged?.Invoke();
@@ -41,6 +43,6 @@ namespace FishingRod
         public string hookImage, hookSprite;
         public int maxWeight;
         public int maxLength;
-        public int speed;
+        public float verticalSpeed, horizontalSpeed;
     }
 }

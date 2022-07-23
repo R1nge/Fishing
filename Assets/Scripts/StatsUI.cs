@@ -12,7 +12,7 @@ public class StatsUI : MonoBehaviour
     private void Start() => UpdateUI();
 
     private void UpdateUI() =>
-        text.text = "Speed: " + so.data.speed + " MaxLength: " + so.data.maxLength + " MaxWeight: " + so.data.maxWeight;
+        text.text = "HSpeed: " + so.data.horizontalSpeed + "VSpeed: " + so.data.verticalSpeed + " MaxLength: " + so.data.maxLength + " MaxWeight: " + so.data.maxWeight;
 
     private void OnDestroy() => so.OnStatsChanged -= UpdateUI;
 }

@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: DefaultFishingRod
   m_EditorClassIdentifier: 
   data:
+    biteImage: 
+    biteSprite: 
     rodImage: global
     rodSprite: Fish1
     hookImage: FishingHook
     hookSprite: FishingHook
     maxWeight: 15
-    maxLength: 15
-    speed: 15
+    maxLength: 25
+    verticalSpeed: 10
+    horizontalSpeed: 3000

@@ -21,7 +21,8 @@ namespace FishingRod
                     hookSprite = "FishingHook",
                     rodImage = "global",
                     rodSprite = "Fish1",
-                    speed = 15,
+                    verticalSpeed = 15,
+                    horizontalSpeed = 25,
                     maxLength = 15,
                     maxWeight = 15
                 };

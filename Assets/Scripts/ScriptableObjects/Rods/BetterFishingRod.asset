@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: BetterFishingRod
   m_EditorClassIdentifier: 
   data:
+    biteImage: 
+    biteSprite: 
     rodImage: global
     rodSprite: Fish2
     hookImage: FishingHook
     hookSprite: FishingHook
     maxWeight: 30
     maxLength: 30
-    speed: 30
+    verticalSpeed: 5
+    horizontalSpeed: 5

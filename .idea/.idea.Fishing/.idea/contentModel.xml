@@ -19,6 +19,7 @@
             <e p="FishingRodSo.cs" t="Include" />
             <e p="FishingRodView.cs" t="Include" />
           </e>
+          <e p="FpsCounter.cs" t="Include" />
           <e p="LoadScene.cs" t="Include" />
           <e p="StatsUI.cs" t="Include" />
         </e>

@@ -16,9 +16,10 @@ MonoBehaviour:
     biteImage: 
     biteSprite: 
     rodImage: global
-    rodSprite: Fish2
+    rodSprite: Fish1
     hookImage: FishingHook
     hookSprite: FishingHook
-    maxWeight: 30
-    maxLength: 30
-    speed: 30
+    maxWeight: 15
+    maxLength: 25
+    verticalSpeed: 10
+    horizontalSpeed: 3000
