@@ -20,39 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LoadScene.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LoadScene.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StatsUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StatsUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ocean.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ocean.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/ScriptableObjecs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/ScriptableObjecs/FishStats.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/ScriptableObjecs/FishStats.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodStats.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodSo.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/ScriptableObjects.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/ScriptableObjects/FishingRodStats.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/ScriptableObjects/FishingRodStats.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMovementController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sprites/Boat.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Boat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/FishingHook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/FishingHook.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free/global.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free/global.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Boat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Boat.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,12 +44,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishMovementController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/Fish.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/Accelerometer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FishingCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DepthUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingHookSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingHook.cs" />
@@ -88,10 +60,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishinRodData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StatsUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FishingCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishMovementController.cs" />
       </list>
     </option>
   </component>
@@ -156,7 +130,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Imported TMPro and sprites" />
     <MESSAGE value="Added fishing rod movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added fishing rod movement" />
+    <MESSAGE value="Added save system, fishingRods, sprites" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added save system, fishingRods, sprites" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1028" y="545" key="#Notifications" timestamp="1658427870718">
@@ -172,9 +147,10 @@
     </state>
     <state x="978" y="343" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1658543341686" />
     <state x="978" y="350" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1658130507046" />
-    <state x="872" y="453" key="Vcs.Push.Dialog.v2" timestamp="1658138959992">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1658564051439">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1658564051439" />
     <state x="872" y="453" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1658138959992" />
     <state x="943" y="318" width="672" height="678" key="search.everywhere.popup" timestamp="1658554414074">
       <screen x="0" y="0" width="2560" height="1410" />
