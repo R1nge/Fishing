@@ -10,7 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba267ca06a444904b7a642aa694604ad, type: 3}
-  m_Name: FishingRodStats
+  m_Name: BetterFishingRod
   m_EditorClassIdentifier: 
-  maxLength: 15
-  speed: 5
+  data:
+    rodImage: global
+    rodSprite: Fish2
+    hookImage: FishingHook
+    hookSprite: FishingHook
+    maxWeight: 30
+    maxLength: 30
+    speed: 30

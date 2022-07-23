@@ -2,7 +2,7 @@
 
 namespace Fish
 {
-    [CreateAssetMenu(fileName = "FishStats", menuName = "SO/Fish/Stats")]
+    [CreateAssetMenu(fileName = "FishStats", menuName = "SO/Fish")]
     public class FishStats : ScriptableObject
     {
         public int weight;

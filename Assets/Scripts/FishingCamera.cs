@@ -4,7 +4,7 @@ public class FishingCamera : MonoBehaviour
 {
     [SerializeField] private Transform fishingRod;
 
-    private void Update()
+    private void LateUpdate()
     {
         var pos = transform.position;
         pos.y = fishingRod.position.y + 1.5f;

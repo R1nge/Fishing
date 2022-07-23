@@ -11,4 +11,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/Island.unity
+    guid: 96265e8cb58d88348958be7189bd75d5
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: c3ee4bb0b272e6240ba4e86b5bd14d9b
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: fe24f0ff0ae53694887c40344fcf8be1
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 3cf68c262e2f4434cb73a2ea599169fb, type: 2}

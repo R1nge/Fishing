@@ -1,13 +1,13 @@
-﻿using System;
-using Fish;
+﻿using Fish;
 using UnityEngine;
 
 namespace FishingRod
 {
+    [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D))]
     public class FishingRod : MonoBehaviour
     {
-        [SerializeField] private FishingRodStats stats;
-        [SerializeField] private Camera mainCamera;
+        [SerializeField] private FishingRodSo fishingRodSo;
+        private Camera _mainCamera;
         private bool _hasReachedBottom;
         private bool _canMove;
         private Vector3 _startPosition;
@@ -25,6 +25,7 @@ namespace FishingRod
 
         private void Awake()
         {
+            _mainCamera = Camera.main;
             _depthUI = FindObjectOfType<DepthUI>();
             _rigidbody2D = GetComponent<Rigidbody2D>();
             Application.targetFrameRate = 9999;
@@ -52,16 +53,14 @@ namespace FishingRod
                     MovePc();
 #endif
                     break;
-                default:
-                    throw new ArgumentOutOfRangeException();
             }
         }
 
         private void MoveDown()
         {
-            if (transform.position.y > -stats.maxLength)
+            if (transform.position.y > -fishingRodSo.data.maxLength)
             {
-                _rigidbody2D.velocity = Vector2.down * stats.speed;
+                _rigidbody2D.velocity = Vector2.down * fishingRodSo.data.speed;
             }
             else
             {
@@ -74,7 +73,7 @@ namespace FishingRod
         {
             if (transform.position.y < _startPosition.y)
             {
-                _rigidbody2D.velocity = Vector2.up * stats.speed;
+                _rigidbody2D.velocity = Vector2.up * fishingRodSo.data.speed;
             }
             else
             {
@@ -97,8 +96,9 @@ namespace FishingRod
         {
             if (!_canMove) return;
             var position = transform.position;
-            position.x = mainCamera.ScreenToWorldPoint(target).x;
-            transform.position = Vector3.MoveTowards(transform.position, position, Time.deltaTime * stats.speed);
+            position.x = _mainCamera.ScreenToWorldPoint(target).x;
+            transform.position =
+                Vector3.MoveTowards(transform.position, position, Time.deltaTime * fishingRodSo.data.speed);
         }
 
         private void OnTriggerEnter2D(Collider2D other)

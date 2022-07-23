@@ -15,10 +15,12 @@
           </e>
           <e p="FishingCamera.cs" t="Include" />
           <e p="FishingRod" t="Include">
-            <e p="Accelerometer.cs" t="Include" />
             <e p="FishingRod.cs" t="Include" />
-            <e p="FishingRodStats.cs" t="Include" />
+            <e p="FishingRodSo.cs" t="Include" />
+            <e p="FishingRodView.cs" t="Include" />
           </e>
+          <e p="LoadScene.cs" t="Include" />
+          <e p="StatsUI.cs" t="Include" />
         </e>
         <e p="Sprites" t="Include">
           <e p="fishing_free" t="Include">
