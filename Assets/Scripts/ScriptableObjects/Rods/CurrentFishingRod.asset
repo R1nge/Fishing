@@ -20,6 +20,6 @@ MonoBehaviour:
     hookImage: FishingHook
     hookSprite: FishingHook
     maxWeight: 15
-    maxLength: 25
-    verticalSpeed: 10
+    maxLength: 250000
+    verticalSpeed: 1e+10
     horizontalSpeed: 3000

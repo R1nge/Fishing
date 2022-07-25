@@ -23,12 +23,12 @@ namespace Fish
 
         private void Update()
         {
-            if (transform.position.x <= -maxPositionX)
+            if (transform.localPosition.x <= -maxPositionX)
             {
                 _direction = Vector3.right;
                 FlipSprite();
             }
-            else if (transform.position.x >= maxPositionX)
+            else if (transform.localPosition.x >= maxPositionX)
             {
                 _direction = Vector3.left;
                 FlipSprite();

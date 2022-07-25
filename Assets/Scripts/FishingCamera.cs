@@ -3,14 +3,7 @@
 public class FishingCamera : MonoBehaviour
 {
     [SerializeField] private Transform fishingRod;
-    private const float SmoothTime = 0.00016f;
-    private Vector3 velocity = Vector3.zero;
+    private readonly Vector3 offset = new Vector3(0, 1.5f, -10);
 
-    private void Update()
-    {
-        var position = transform.position;
-        position = Vector3.SmoothDamp(position,
-            new Vector3(position.x, fishingRod.position.y + 1.5f, position.z), ref velocity, SmoothTime);
-        transform.position = position;
-    }
+    private void LateUpdate() => transform.position = new Vector3(0, fishingRod.position.y + offset.y, -10);
 }

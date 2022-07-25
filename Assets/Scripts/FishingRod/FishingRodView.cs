@@ -50,7 +50,7 @@ namespace FishingRod
                 }
             }
 
-            Debug.LogWarning("Sprite not found");
+            //Debug.LogWarning("Sprite not found");
             return null;
         }
 
