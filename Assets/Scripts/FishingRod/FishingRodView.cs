@@ -24,12 +24,11 @@ namespace FishingRod
                     rodSprite = "global[Fish1]",
                     hookSprite = "FishingHook",
                     biteSprite = "",
-                    horizontalSpeed = 1500,
-                    maxLength = 30,
-                    maxWeight = 20,
-                    verticalSpeed = 200
+                    maxWeight = 15,
+                    maxLength = 25,
+                    verticalSpeed = 10,
+                    horizontalSpeed = 3000
                 };
-                UpdateSprites();
             }
 
             UpdateSprites();

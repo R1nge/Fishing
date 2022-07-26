@@ -43,7 +43,7 @@ namespace FishingRod
             depthUI.UpdateUI(_distance);
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             switch (_state)
             {
@@ -82,7 +82,7 @@ namespace FishingRod
             }
             else
             {
-                var dir = new Vector2(0, fishingRodSo.data.verticalSpeed * Time.deltaTime);
+                var dir = new Vector2(0, fishingRodSo.data.verticalSpeed * Time.fixedDeltaTime);
                 _rigidbody2D.MovePosition(_rigidbody2D.position - dir);
             }
         }
@@ -105,9 +105,9 @@ namespace FishingRod
             if (transform.position.y < _startPosition.y)
             {
                 var touchPos = new Vector2(_mainCamera.ScreenToWorldPoint(target).x, 0);
-                var dir = new Vector2(0, fishingRodSo.data.verticalSpeed * Time.deltaTime);
+                var dir = new Vector2(0, fishingRodSo.data.verticalSpeed * Time.fixedDeltaTime);
                 _rigidbody2D.MovePosition(_rigidbody2D.position + dir);
-                _rigidbody2D.AddForce(touchPos * (fishingRodSo.data.horizontalSpeed * Time.deltaTime));
+                _rigidbody2D.AddForce(touchPos * (fishingRodSo.data.horizontalSpeed * Time.fixedDeltaTime));
                 UpdateUI();
             }
             else

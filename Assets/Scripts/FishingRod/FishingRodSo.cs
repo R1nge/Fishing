@@ -35,9 +35,9 @@ namespace FishingRod
     [Serializable]
     public class RodData
     {
-        public string biteSprite;
         public string rodSprite;
         public string hookSprite;
+        public string biteSprite;
         public int maxWeight;
         public int maxLength;
         public float verticalSpeed, horizontalSpeed;
