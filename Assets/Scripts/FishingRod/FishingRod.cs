@@ -50,10 +50,11 @@ namespace FishingRod
                 case States.Idle:
                     break;
                 case States.Down:
-                    MoveDown();
                     UpdateUI();
+                    MoveDown();
                     break;
                 case States.Up:
+                    UpdateUI();
 #if UNITY_ANDROID && !UNITY_EDITOR
                     MoveMobile();
 #else
@@ -76,7 +77,6 @@ namespace FishingRod
                 var pos = _rigidbody2D.position;
                 pos.y = -fishingRodSo.data.maxLength;
                 _rigidbody2D.position = pos;
-                depthUI.UpdateUI((int) -pos.y);
                 _canMove = true;
                 _state = States.Up;
             }
@@ -108,7 +108,6 @@ namespace FishingRod
                 var dir = new Vector2(0, fishingRodSo.data.verticalSpeed * Time.fixedDeltaTime);
                 _rigidbody2D.MovePosition(_rigidbody2D.position + dir);
                 _rigidbody2D.AddForce(touchPos * (fishingRodSo.data.horizontalSpeed * Time.fixedDeltaTime));
-                UpdateUI();
             }
             else
             {
@@ -117,14 +116,18 @@ namespace FishingRod
                 _rigidbody2D.position = _startPosition;
                 _distance = 0;
                 _canMove = false;
-                depthUI.UpdateUI(_distance);
                 _state = States.Idle;
             }
         }
 
         private void UpdateUI()
         {
-            if (Math.Abs(_rigidbody2D.position.y - _distance) >= 0.9f)
+            if (Math.Abs(_rigidbody2D.position.y - _distance) >= 1f)
+            {
+                _distance = (int) _rigidbody2D.position.y;
+                depthUI.UpdateUI(-_distance);
+            }
+            else if (Math.Abs(_rigidbody2D.position.y + _distance) >= 1f)
             {
                 _distance = (int) _rigidbody2D.position.y;
                 depthUI.UpdateUI(-_distance);
