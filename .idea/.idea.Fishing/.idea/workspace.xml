@@ -23,42 +23,23 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FishingHook.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FishingHook.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/global.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/global.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FishingHook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/FishingHook.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/global.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/global.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ocean.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ocean.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DepthUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DepthUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/Fish.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMovementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishMovementController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingCamera.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodSo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FpsCounter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FpsCounter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Rods/BetterFishingRod.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Rods/BetterFishingRod.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Rods/CurrentFishingRod.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Rods/CurrentFishingRod.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StatsUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StatsUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Boat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Boat.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fish/1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fish/1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fish/2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fish/2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fish/3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fish/3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fish/4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fish/4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fish/5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fish/5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fish/6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fish/6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fish/7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fish/7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fish/8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fish/8.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Map.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Map.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Rods/DefaultFishingRod.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Rods/DefaultFishingRod.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/DepthUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DepthUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_Android.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_Android.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,8 +58,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A317319-33E0-419C-A5A9-95305014AD37/c8/26f28e2a/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A317319-33E0-419C-A5A9-95305014AD37/d5/31e220c4/Application.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/UnityProjects/Fishing/Assets/Sprites/Fish/2.png.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/UnityProjects/Fishing/Assets/Sprites/Fish/1.png.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIElements/PanelEventHandler.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -101,12 +80,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PixelCollider2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StatsUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UpdateManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishMovementController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FpsCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/Fish.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CacheStrings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DepthUI.cs" />
@@ -115,6 +92,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StatsUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/DepthUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodSo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodView.cs" />
       </list>
     </option>
   </component>
@@ -198,10 +177,10 @@
     </state>
     <state x="978" y="343" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1658584187299" />
     <state x="978" y="350" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1658130507046" />
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1658594006007">
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1658741970745">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1658594006007" />
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1658741970745" />
     <state x="872" y="453" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1658138959992" />
     <state x="943" y="318" width="672" height="678" key="search.everywhere.popup" timestamp="1658725159429">
       <screen x="0" y="0" width="2560" height="1410" />

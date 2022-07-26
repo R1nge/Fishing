@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Ocean
+  m_EditorClassIdentifier: 
+  m_GroupName: Ocean
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 831004f9ee6967246a3c3cbfb9e89e33
+  m_SerializeEntries:
+  - m_GUID: 9b506e0d98b743940a22ce81f9d35463
+    m_Address: FishingHook
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a4d2b576e7b52c344995d541a6f86f1b
+    m_Address: global
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ecf679c263900254689e6e5e2693735c, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3a1335bdc7a1c184496139894a56aee7, type: 2}
+    - {fileID: 11400000, guid: 42fe37231f2d26c4baa4737188458b45, type: 2}

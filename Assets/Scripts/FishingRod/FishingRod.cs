@@ -124,7 +124,7 @@ namespace FishingRod
 
         private void UpdateUI()
         {
-            if (Math.Abs(_rigidbody2D.position.y - _distance) >= 1f)
+            if (Math.Abs(_rigidbody2D.position.y - _distance) >= 0.9f)
             {
                 _distance = (int) _rigidbody2D.position.y;
                 depthUI.UpdateUI(-_distance);
