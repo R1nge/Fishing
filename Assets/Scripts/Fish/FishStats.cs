@@ -5,9 +5,9 @@ namespace Fish
     [CreateAssetMenu(fileName = "FishStats", menuName = "SO/Fish")]
     public class FishStats : ScriptableObject
     {
-        public int weight;
-        public int pricePerWeight;
-        public int spawnDepth;
+        [SerializeField] private int weight;
+        [SerializeField] private int pricePerWeight;
+        [SerializeField] private int spawnDepth;
         public int TotalPrice => weight * pricePerWeight * spawnDepth;
     }
 }

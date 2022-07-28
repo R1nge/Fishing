@@ -6,19 +6,17 @@ namespace FishingRod
     [CreateAssetMenu(fileName = "FishingRod", menuName = "SO/FishingRod")]
     public class FishingRodSo : ScriptableObject
     {
+        public Sprite icon;
         public RodData data;
 
         public event Action OnSpriteChanged;
         public event Action OnStatsChanged;
 
-        private void OnEnable() => SetAll(this);
-
         public void SetAll(FishingRodSo so)
         {
+            icon = so.icon;
             data.biteSprite = so.data.biteSprite;
-
             data.rodSprite = so.data.rodSprite;
-
             data.hookSprite = so.data.hookSprite;
 
             data.maxWeight = so.data.maxWeight;

@@ -25,6 +25,10 @@ MonoBehaviour:
     m_Address: global
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 027addb0d1d2a72408c0cdbde55d2f82
+    m_Address: Rods
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ecf679c263900254689e6e5e2693735c, type: 2}
   m_SchemaSet:

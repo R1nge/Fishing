@@ -30,11 +30,6 @@ namespace FishingRod
             _mainCamera = Camera.main;
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _rigidbody2D.WakeUp();
-#if !UNITY_EDITOR
-            Application.targetFrameRate = Screen.currentResolution.refreshRate;
-#else
-            Application.targetFrameRate = 9999;
-#endif
         }
 
         private void Start()
@@ -48,6 +43,7 @@ namespace FishingRod
             switch (_state)
             {
                 case States.Idle:
+                    gameObject.SetActive(false);
                     break;
                 case States.Down:
                     UpdateUI();
@@ -141,6 +137,16 @@ namespace FishingRod
             movementController.enabled = false;
             other.transform.parent = transform;
             other.transform.localPosition = Vector3.zero;
+            // if (other.TryGetComponent(out HingeJoint2D joint2D))
+            // {
+            //     joint2D.limits = new JointAngleLimits2D()
+            //     {
+            //         max = 320,
+            //         min = 220
+            //     };
+            //     joint2D.connectedBody = _rigidbody2D;
+            //     joint2D.useLimits = true;
+            // }
         }
     }
 }

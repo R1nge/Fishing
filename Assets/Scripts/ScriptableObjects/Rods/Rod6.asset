@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba267ca06a444904b7a642aa694604ad, type: 3}
-  m_Name: CurrentFishingRod
+  m_Name: Rod6
   m_EditorClassIdentifier: 
+  icon: {fileID: 710804007, guid: 027addb0d1d2a72408c0cdbde55d2f82, type: 3}
   data:
-    biteSprite: 
-    rodSprite: global[Fish1]
+    rodSprite: Rods[Rod6]
     hookSprite: FishingHook
-    maxWeight: 15
-    maxLength: 25
+    biteSprite: 
+    maxWeight: 30
+    maxLength: 30
     verticalSpeed: 10
     horizontalSpeed: 3000

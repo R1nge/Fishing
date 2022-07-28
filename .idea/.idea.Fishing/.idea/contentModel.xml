@@ -18,10 +18,81 @@
             <e p="FishingRodSo.cs" t="Include" />
             <e p="FishingRodView.cs" t="Include" />
           </e>
+          <e p="FpsManager.cs" t="Include" />
+          <e p="Inventory.cs" t="Include" />
           <e p="LoadScene.cs" t="Include" />
+          <e p="MoneyManager.cs" t="Include" />
+          <e p="Savemanager.cs" t="Include" />
+          <e p="Shop.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="DepthUI.cs" t="Include" />
+            <e p="MoneyUI.cs" t="Include" />
             <e p="StatsUI.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Simple Scroll-Snap" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Core" t="Include">
+              <e p="Editor" t="Include">
+                <e p="SimpleScrollSnapEditor.asmdef" t="Include" />
+                <e p="SimpleScrollSnapEditor.cs" t="Include" />
+              </e>
+              <e p="Runtime" t="Include">
+                <e p="Behaviours" t="Include">
+                  <e p="Helper" t="Include">
+                    <e p="NestedScrollRect.cs" t="Include" />
+                  </e>
+                  <e p="SimpleScrollSnap.cs" t="Include" />
+                  <e p="TransitionEffect" t="Include">
+                    <e p="Samples" t="Include">
+                      <e p="Fade.cs" t="Include" />
+                      <e p="RecolourBlue.cs" t="Include" />
+                      <e p="RecolourGreen.cs" t="Include" />
+                      <e p="RecolourRed.cs" t="Include" />
+                      <e p="RotateX.cs" t="Include" />
+                      <e p="RotateY.cs" t="Include" />
+                      <e p="RotateZ.cs" t="Include" />
+                      <e p="Scale.cs" t="Include" />
+                      <e p="ScaleX.cs" t="Include" />
+                      <e p="ScaleY.cs" t="Include" />
+                      <e p="ScaleZ.cs" t="Include" />
+                      <e p="TranslateZ.cs" t="Include" />
+                    </e>
+                    <e p="TransitionEffectBase.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Enums" t="Include">
+                  <e p="Direction.cs" t="Include" />
+                  <e p="MovementAxis.cs" t="Include" />
+                  <e p="MovementType.cs" t="Include" />
+                  <e p="SizeControl.cs" t="Include" />
+                  <e p="SnapTarget.cs" t="Include" />
+                </e>
+              </e>
+              <e p="SimpleScrollSnap.asmdef" t="Include" />
+            </e>
+            <e p="Plugins" t="Include">
+              <e p="SimpleInspectorAttributes" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="MinMaxDrawer.cs" t="Include" />
+                  <e p="SimpleInspectorAttributesEditor.asmdef" t="Include" />
+                </e>
+                <e p="Runtime" t="Include">
+                  <e p="Margins.cs" t="Include" />
+                  <e p="MinMax.cs" t="Include" />
+                </e>
+                <e p="SimpleInspectorAttributes.asmdef" t="Include" />
+              </e>
+              <e p="Utilities" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="EditorLayoutUtility.cs" t="Include" />
+                  <e p="EditorUtilities.asmdef" t="Include" />
+                </e>
+                <e p="StringUtility.cs" t="Include" />
+                <e p="UnityEventUtility.cs" t="Include" />
+                <e p="Utilities.asmdef" t="Include" />
+              </e>
+            </e>
           </e>
         </e>
         <e p="Sprites" t="Include">
@@ -73,7 +144,13 @@
       <e p="Fishing.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+      <e p="SimpleInspectorAttributes.csproj" t="IncludeRecursive" />
+      <e p="SimpleInspectorAttributesEditor.csproj" t="IncludeRecursive" />
+      <e p="SimpleScrollSnap.csproj" t="IncludeRecursive" />
+      <e p="SimpleScrollSnapEditor.csproj" t="IncludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="Utilities.csproj" t="IncludeRecursive" />
+      <e p="UtilitiesEditor.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>
