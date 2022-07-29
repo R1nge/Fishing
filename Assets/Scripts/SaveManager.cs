@@ -4,39 +4,55 @@ using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
-    [SerializeField] private FishingRodSo so;
-
+    [SerializeField] private FishingRodSo[] so;
+    private RodData[] _data;
+#if !UNITY_EDITOR
     private void Awake()
     {
+        
         if (File.Exists(Application.persistentDataPath + "/Rod.json"))
         {
             LoadFromJson();
         }
         else
         {
-            so.data = new RodData
+            _data = new RodData[so.Length];
+            for (int i = 0; i < so.Length; i++)
             {
-                rodSprite = "global[Fish1]",
-                hookSprite = "FishingHook",
-                biteSprite = "",
-                maxWeight = 15,
-                maxLength = 25,
-                verticalSpeed = 10,
-                horizontalSpeed = 3000
-            };
+                _data[i] = so[i].data; //???
+            }
         }
 
-        so.OnSpriteChanged += SaveToJson;
-    }
+        for (int i = 0; i < so.Length; i++)
+        {
+            so[i].OnSpriteChanged += SaveToJson;
+        }
 
-    private void SaveToJson() =>
-        File.WriteAllText(Application.persistentDataPath + "/Rod.json", JsonUtility.ToJson(so.data));
+        SaveToJson();
+    }
 
     private void LoadFromJson()
     {
         string fileContents = File.ReadAllText(Application.persistentDataPath + "/Rod.json");
-        so.data = JsonUtility.FromJson<RodData>(fileContents);
+        _data = JsonHelper.FromJson<RodData>(fileContents);
+        for (int i = 0; i < so.Length; i++)
+        {
+            so[i].data = _data[i];
+        }
     }
 
-    private void OnDestroy() => so.OnSpriteChanged -= SaveToJson;
+    private void SaveToJson() =>
+        File.WriteAllText(Application.persistentDataPath + "/Rod.json", JsonHelper.ToJson(_data, true));
+
+    private void OnApplicationQuit() => SaveToJson();
+
+
+    private void OnDestroy()
+    {
+        for (int i = 0; i < so.Length; i++)
+        {
+            so[i].OnSpriteChanged -= SaveToJson;
+        }
+    }
+#endif
 }

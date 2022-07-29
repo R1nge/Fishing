@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: Rod2
   m_EditorClassIdentifier: 
   icon: {fileID: -662856771, guid: 027addb0d1d2a72408c0cdbde55d2f82, type: 3}
+  price: 200
   data:
     rodSprite: Rods[Rod2]
     hookSprite: FishingHook
-    biteSprite: 
-    maxWeight: 30
-    maxLength: 30
-    verticalSpeed: 10
-    horizontalSpeed: 3000
+    biteSprite: 2
+    maxWeight: 2
+    maxLength: 2
+    verticalSpeed: 2
+    horizontalSpeed: 2
+    isUnlocked: 0

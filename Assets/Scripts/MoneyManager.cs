@@ -7,7 +7,15 @@ public class MoneyManager : MonoBehaviour
     private const string MONEY = "Money";
     public event Action<int> OnMoneyAmountChanged;
 
-    private void Start() => Load();
+    private void Start()
+    {
+#if UNITY_EDITOR
+        money = 600;
+        OnMoneyAmountChanged?.Invoke(money);
+        Save();
+#endif
+        Load();
+    }
 
     public bool Spend(int amount)
     {

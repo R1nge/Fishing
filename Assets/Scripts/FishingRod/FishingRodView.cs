@@ -31,8 +31,7 @@ namespace FishingRod
             rod.sprite = asyncOperationHandle.Result[1];
             //bite.sprite = asyncOperationHandle.Result[2];
         }
-
-
+        
         private void OnDestroy() => so.OnSpriteChanged -= UpdateSprites;
     }
 }

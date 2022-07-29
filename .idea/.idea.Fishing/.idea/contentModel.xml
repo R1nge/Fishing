@@ -20,10 +20,11 @@
           </e>
           <e p="FpsManager.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
+          <e p="JsonHelper.cs" t="Include" />
           <e p="LoadScene.cs" t="Include" />
           <e p="MoneyManager.cs" t="Include" />
+          <e p="RodShop.cs" t="Include" />
           <e p="Savemanager.cs" t="Include" />
-          <e p="Shop.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="DepthUI.cs" t="Include" />
             <e p="MoneyUI.cs" t="Include" />
@@ -88,7 +89,6 @@
                   <e p="EditorLayoutUtility.cs" t="Include" />
                   <e p="EditorUtilities.asmdef" t="Include" />
                 </e>
-                <e p="StringUtility.cs" t="Include" />
                 <e p="UnityEventUtility.cs" t="Include" />
                 <e p="Utilities.asmdef" t="Include" />
               </e>
