@@ -15,11 +15,12 @@ MonoBehaviour:
   icon: {fileID: 710804007, guid: 027addb0d1d2a72408c0cdbde55d2f82, type: 3}
   price: 600
   data:
+    rodTitle: Rod6
     rodSprite: Rods[Rod6]
     hookSprite: FishingHook
-    biteSprite: 6
-    maxWeight: 6
-    maxLength: 6
-    verticalSpeed: 6
-    horizontalSpeed: 6
+    biteSprite: 1
+    maxWeight: 1
+    maxLength: 30
+    verticalSpeed: 10
+    horizontalSpeed: 1500
     isUnlocked: 0

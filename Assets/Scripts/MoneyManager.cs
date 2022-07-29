@@ -4,6 +4,9 @@ using UnityEngine;
 public class MoneyManager : MonoBehaviour
 {
     [SerializeField] private int money;
+
+    public int Money => money;
+
     private const string MONEY = "Money";
     public event Action<int> OnMoneyAmountChanged;
 

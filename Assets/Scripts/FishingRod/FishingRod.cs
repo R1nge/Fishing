@@ -1,5 +1,4 @@
 ﻿using System;
-using Fish;
 using UI;
 using UnityEngine;
 
@@ -14,6 +13,7 @@ namespace FishingRod
         private Vector3 _startPosition;
         private Camera _mainCamera;
         private Rigidbody2D _rigidbody2D;
+        private HookCollision _collision;
         private int _distance;
 
         private enum States
@@ -30,6 +30,7 @@ namespace FishingRod
             _mainCamera = Camera.main;
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _rigidbody2D.WakeUp();
+            _collision = GetComponent<HookCollision>();
         }
 
         private void Start()
@@ -133,10 +134,14 @@ namespace FishingRod
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!_canMove) return;
-            if (!other.TryGetComponent(out FishMovementController movementController)) return;
-            movementController.enabled = false;
-            other.transform.parent = transform;
-            other.transform.localPosition = Vector3.zero;
+
+            _collision.Attach(other);
+
+            if (other.TryGetComponent(out Fish.Fish myfish))
+            {
+                _collision.AddToInventory(myfish.fishSo);
+            }
+
             // if (other.TryGetComponent(out HingeJoint2D joint2D))
             // {
             //     joint2D.limits = new JointAngleLimits2D()

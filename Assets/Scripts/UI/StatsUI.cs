@@ -8,9 +8,10 @@ namespace UI
     public class StatsUI : MonoBehaviour
     {
         [SerializeField] private Image icon;
-        [SerializeField] private TextMeshProUGUI length, weight, speed, price, buttonText;
+        [SerializeField] private TextMeshProUGUI title, length, weight, speed, price, buttonText;
         [SerializeField] private Button button;
         [SerializeField] private FishingRodSo current, so;
+        [SerializeField] private MoneyManager moneyManager;
 
         private void Awake()
         {
@@ -27,6 +28,7 @@ namespace UI
         private void UpdateUI()
         {
             icon.sprite = so.icon;
+            title.text = so.data.rodTitle;
             speed.text = "Speed: " + so.data.horizontalSpeed;
             weight.text = "Weight: " + so.data.maxWeight;
             length.text = "Length: " + so.data.maxLength;
@@ -35,8 +37,16 @@ namespace UI
 
         private void UpdateStatus()
         {
-            button.interactable = current.data.rodSprite != so.data.rodSprite;
-            buttonText.text = button.interactable ? so.data.isUnlocked ? "Equip" : "Buy" : so.data.isUnlocked ? "Equipped" : "Equip";
+            if (current.data.rodSprite == so.data.rodSprite || moneyManager.Money < so.price && !so.data.isUnlocked)
+                button.interactable = false;
+            else
+                button.interactable = true;
+
+            if (button.interactable)
+                buttonText.text = so.data.isUnlocked ? "Equip" : "Buy";
+            else
+                buttonText.text = so.data.isUnlocked ? "Equipped" : "Buy";
+
             price.gameObject.SetActive(!so.data.isUnlocked);
         }
 

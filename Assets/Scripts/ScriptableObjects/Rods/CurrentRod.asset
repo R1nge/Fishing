@@ -15,6 +15,7 @@ MonoBehaviour:
   icon: {fileID: 1698067959, guid: 027addb0d1d2a72408c0cdbde55d2f82, type: 3}
   price: 0
   data:
+    rodTitle: Rod1
     rodSprite: Rods[Rod1]
     hookSprite: FishingHook
     biteSprite: 1

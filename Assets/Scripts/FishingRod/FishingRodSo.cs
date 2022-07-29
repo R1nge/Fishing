@@ -17,6 +17,7 @@ namespace FishingRod
         public void SetAll(FishingRodSo so)
         {
             icon = so.icon;
+            data.rodTitle = so.data.rodTitle;
             data.isUnlocked = so.data.isUnlocked;
             data.biteSprite = so.data.biteSprite;
             data.rodSprite = so.data.rodSprite;
@@ -46,6 +47,7 @@ namespace FishingRod
     [Serializable]
     public class RodData
     {
+        public string rodTitle;
         public string rodSprite;
         public string hookSprite;
         public string biteSprite;
