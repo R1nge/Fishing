@@ -4,10 +4,45 @@
     <e p="C:\Users\R1nge\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\R1nge\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Fishing.-754511457.00" t="ExcludeRecursive" />
     <e p="D:\UnityProjects\Fishing" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AddressableAssetsData" t="Include">
-          <e p="link.xml" t="Include" />
+        <e p="BayatGames" t="Include">
+          <e p="SaveGameFree" t="Include">
+            <e p="Editor" t="Include">
+              <e p="Tests" t="Include">
+                <e p="SaveGameTests.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Plugins" t="Include">
+              <e p="FullSerializer.xml" t="Include" />
+            </e>
+            <e p="README.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="Encoders" t="Include">
+                <e p="ISaveGameEncoder.cs" t="Include" />
+                <e p="SaveGameSimpleEncoder.cs" t="Include" />
+              </e>
+              <e p="SaveGame.cs" t="Include" />
+              <e p="SaveGameAuto.cs" t="Include" />
+              <e p="SaveGameWeb.cs" t="Include" />
+              <e p="Serializers" t="Include">
+                <e p="ISaveGameSerializer.cs" t="Include" />
+                <e p="SaveGameBinarySerializer.cs" t="Include" />
+                <e p="SaveGameJsonSerializer.cs" t="Include" />
+                <e p="SaveGameXmlSerializer.cs" t="Include" />
+              </e>
+              <e p="Types" t="Include">
+                <e p="Color32Save.cs" t="Include" />
+                <e p="ColorSave.cs" t="Include" />
+                <e p="MeshSave.cs" t="Include" />
+                <e p="QuaternionSave.cs" t="Include" />
+                <e p="Vector2Save.cs" t="Include" />
+                <e p="Vector3Save.cs" t="Include" />
+                <e p="Vector4Save.cs" t="Include" />
+              </e>
+            </e>
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="Fish" t="Include">
@@ -24,7 +59,6 @@
           <e p="FpsManager.cs" t="Include" />
           <e p="HookCollision.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
-          <e p="JsonHelper.cs" t="Include" />
           <e p="LoadScene.cs" t="Include" />
           <e p="MoneyManager.cs" t="Include" />
           <e p="RodShop.cs" t="Include" />

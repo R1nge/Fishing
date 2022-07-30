@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a846f20cd540e485757d2d51058b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  identifier: rods
   so:
   - {fileID: 11400000, guid: b0a9b6c3e86082d46b0545fa75ee8013, type: 2}
   - {fileID: 11400000, guid: ba7639b559561df4781f4278bc9271e1, type: 2}

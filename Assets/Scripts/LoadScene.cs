@@ -12,9 +12,10 @@ public class LoadScene : MonoBehaviour
     private IEnumerator Load_c(string title)
     {
         animator.SetTrigger(StartAnim);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(title);
-        
+
         while (!asyncLoad.isDone)
         {
             yield return null;

@@ -20,7 +20,7 @@ MonoBehaviour:
     hookSprite: FishingHook
     biteSprite: 1
     maxWeight: 1
-    maxLength: 1
-    verticalSpeed: 1
-    horizontalSpeed: 1
+    maxLength: 30
+    verticalSpeed: 10
+    horizontalSpeed: 1500
     isUnlocked: 1

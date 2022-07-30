@@ -1,58 +1,54 @@
-﻿using System.IO;
+﻿using BayatGames.SaveGameFree;
 using FishingRod;
 using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
+    [SerializeField] private string identifier = "rods";
     [SerializeField] private FishingRodSo[] so;
     private RodData[] _data;
-#if !UNITY_EDITOR
+
     private void Awake()
     {
-        
-        if (File.Exists(Application.persistentDataPath + "/Rod.json"))
+        if (SaveGame.Exists(identifier))
         {
-            LoadFromJson();
+            Load();
         }
         else
         {
-            _data = new RodData[so.Length];
-            for (int i = 0; i < so.Length; i++)
-            {
-                _data[i] = so[i].data; //???
-            }
+            Save();
         }
-
-        for (int i = 0; i < so.Length; i++)
-        {
-            so[i].OnSpriteChanged += SaveToJson;
-        }
-
-        SaveToJson();
     }
 
-    private void LoadFromJson()
+    private void Save()
     {
-        string fileContents = File.ReadAllText(Application.persistentDataPath + "/Rod.json");
-        _data = JsonHelper.FromJson<RodData>(fileContents);
+        _data = new RodData[so.Length];
+        for (int i = 0; i < so.Length; i++)
+        {
+            _data[i] = so[i].data; 
+        }
+
+        SaveGame.Save(identifier, _data);
+    }
+
+    private void Load()
+    {
+        _data = SaveGame.Load<RodData[]>(identifier);
+
         for (int i = 0; i < so.Length; i++)
         {
             so[i].data = _data[i];
+            so[i].OnSpriteChanged += Save;
         }
     }
 
-    private void SaveToJson() =>
-        File.WriteAllText(Application.persistentDataPath + "/Rod.json", JsonHelper.ToJson(_data, true));
-
-    private void OnApplicationQuit() => SaveToJson();
-
+    private void OnApplicationQuit() => Save();
 
     private void OnDestroy()
     {
         for (int i = 0; i < so.Length; i++)
         {
-            so[i].OnSpriteChanged -= SaveToJson;
+            so[i].OnSpriteChanged -= Save;
         }
     }
-#endif
 }

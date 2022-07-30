@@ -1348,9 +1348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '600
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2036,7 +2034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3defb75e5d6441298e5b06524b09aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 600
+  money: 200
 --- !u!114 &2121165340
 MonoBehaviour:
   m_ObjectHideFlags: 0

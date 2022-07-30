@@ -12,18 +12,16 @@ public class Inventory : MonoBehaviour
     {
         if (File.Exists(Application.persistentDataPath + "/Inventory.json"))
         {
-            LoadFromJson();
+            //TODO: override if data is not identical
         }
         else
         {
             _data = new FishData[fish.Count];
             for (int i = 0; i < fish.Count; i++)
             {
-                _data[i] = fish[i].data; //???
+                _data[i] = fish[i].data;
             }
         }
-
-        SaveToJson();
     }
 
     public void Add(FishSO newFish)
@@ -52,18 +50,7 @@ public class Inventory : MonoBehaviour
             fish.Remove(fishToRemove);
     }
 
-    private void LoadFromJson()
-    {
-        string fileContents = File.ReadAllText(Application.persistentDataPath + "/Inventory.json");
-        _data = JsonHelper.FromJson<FishData>(fileContents);
-        for (int i = 0; i < fish.Count; i++)
-        {
-            fish[i].data = _data[i];
-        }
-    }
+    //TODO: save load
 
-    private void SaveToJson() =>
-        File.WriteAllText(Application.persistentDataPath + "/Inventory.json", JsonHelper.ToJson(_data, true));
-
-    private void OnApplicationQuit() => SaveToJson();
+    // private void OnApplicationQuit() => SaveToJson();
 }
