@@ -113,7 +113,17 @@ namespace FishingRod
                 _rigidbody2D.position = _startPosition;
                 _distance = 0;
                 _canMove = false;
+                DestroyChildren();
                 _state = States.Idle;
+            }
+        }
+
+        private void DestroyChildren()
+        {
+            for (int i = transform.childCount - 1; i >= 0; --i)
+            {
+                var child = transform.GetChild(i).gameObject;
+                Destroy(child);
             }
         }
 
@@ -141,17 +151,6 @@ namespace FishingRod
             {
                 _collision.AddToInventory(myfish.fishSo);
             }
-
-            // if (other.TryGetComponent(out HingeJoint2D joint2D))
-            // {
-            //     joint2D.limits = new JointAngleLimits2D()
-            //     {
-            //         max = 320,
-            //         min = 220
-            //     };
-            //     joint2D.connectedBody = _rigidbody2D;
-            //     joint2D.useLimits = true;
-            // }
         }
     }
 }

@@ -6,20 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Ocean.unity
-    guid: a613036d3290fda41882356c6048368f
-  - enabled: 0
-    path: Assets/Scenes/Home.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/Island.unity
-    guid: 96265e8cb58d88348958be7189bd75d5
-  - enabled: 0
     path: Assets/Scenes/Map.unity
     guid: c3ee4bb0b272e6240ba4e86b5bd14d9b
   - enabled: 1
+    path: Assets/Scenes/Ocean.unity
+    guid: a613036d3290fda41882356c6048368f
+  - enabled: 1
+    path: Assets/Scenes/Restoraunt.unity
+    guid: 96265e8cb58d88348958be7189bd75d5
+  - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: fe24f0ff0ae53694887c40344fcf8be1
+  - enabled: 0
+    path: Assets/Scenes/Home.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: ec9eaf23022712d449caba6544c0b8d3, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: cc24d5e200b842340bec680b5dd9eaa8, type: 2}

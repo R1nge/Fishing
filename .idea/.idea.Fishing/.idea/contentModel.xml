@@ -50,7 +50,7 @@
             <e p="FishMovementController.cs" t="Include" />
             <e p="FishSO.cs" t="Include" />
           </e>
-          <e p="FishingCamera.cs" t="Include" />
+          <e p="FishingFollowCamera.cs" t="Include" />
           <e p="FishingRod" t="Include">
             <e p="FishingRod.cs" t="Include" />
             <e p="FishingRodSo.cs" t="Include" />
@@ -60,6 +60,11 @@
           <e p="HookCollision.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
           <e p="LoadScene.cs" t="Include" />
+          <e p="Map" t="Include">
+            <e p="MapCollision.cs" t="Include" />
+            <e p="MapFollowCamera.cs" t="Include" />
+            <e p="MapMovement.cs" t="Include" />
+          </e>
           <e p="MoneyManager.cs" t="Include" />
           <e p="RodShop.cs" t="Include" />
           <e p="Savemanager.cs" t="Include" />

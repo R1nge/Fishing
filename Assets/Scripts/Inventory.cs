@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections;
+using System.Collections.Generic;
+using BayatGames.SaveGameFree;
 using Fish;
 using UnityEngine;
 
@@ -7,21 +8,14 @@ public class Inventory : MonoBehaviour
 {
     public List<FishSO> fish;
     private FishData[] _data;
+    private readonly string _identifier = "inventory";
 
     private void Awake()
     {
-        if (File.Exists(Application.persistentDataPath + "/Inventory.json"))
-        {
-            //TODO: override if data is not identical
-        }
+        if (SaveGame.Exists(_identifier))
+            Load();
         else
-        {
-            _data = new FishData[fish.Count];
-            for (int i = 0; i < fish.Count; i++)
-            {
-                _data[i] = fish[i].data;
-            }
-        }
+            Save();
     }
 
     public void Add(FishSO newFish)
@@ -34,11 +28,6 @@ public class Inventory : MonoBehaviour
         {
             fish.Add(newFish);
             newFish.data.amount++;
-            _data = new FishData[fish.Count];
-            for (int i = 0; i < fish.Count; i++)
-            {
-                _data[i] = fish[i].data; //???
-            }
         }
     }
 
@@ -50,7 +39,43 @@ public class Inventory : MonoBehaviour
             fish.Remove(fishToRemove);
     }
 
-    //TODO: save load
+    private void Save()
+    {
+        _data = new FishData[fish.Count];
 
-    // private void OnApplicationQuit() => SaveToJson();
+        for (int i = 0; i < fish.Count; i++)
+        {
+            _data[i] = fish[i].data;
+        }
+
+        SaveGame.Save(_identifier, _data);
+    }
+
+    public void SaveCloud() => StartCoroutine(SaveCloud_c());
+
+    private IEnumerator SaveCloud_c()
+    {
+        print("Inventory saved");
+        yield break;
+    }
+
+    private void Load()
+    {
+        _data = SaveGame.Load<FishData[]>(_identifier);
+
+        for (int i = 0; i < fish.Count; i++)
+        {
+            fish[i].data = _data[i];
+        }
+    }
+
+    public void LoadCloud() => StartCoroutine(LoadCloud_c());
+
+    private IEnumerator LoadCloud_c()
+    {
+        print("Inventory loaded");
+        yield break;
+    }
+
+    private void OnApplicationQuit() => Save();
 }

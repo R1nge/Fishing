@@ -4,8 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
+    [SerializeField] private string levelName;
     [SerializeField] private Animator animator;
     private static readonly int StartAnim = Animator.StringToHash("Start");
+
+    public void LoadWithString() => StartCoroutine(Load_c(levelName));
 
     public void Load(string title) => StartCoroutine(Load_c(title));
 

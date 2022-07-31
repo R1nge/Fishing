@@ -15,7 +15,7 @@ MonoBehaviour:
   icon: {fileID: 1269471320, guid: 117358ae7d9dccc42bb267f7867812be, type: 3}
   fishName: Fish1
   data:
-    amount: 5
+    amount: 11
   weight: 10
   pricePerWeight: 2
   rareModifier: 0

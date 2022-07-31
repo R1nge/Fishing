@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1029,6 +1029,7 @@ MonoBehaviour:
   button: {fileID: 5121775524198483371}
   current: {fileID: 11400000, guid: b0a9b6c3e86082d46b0545fa75ee8013, type: 2}
   so: {fileID: 11400000, guid: ba7639b559561df4781f4278bc9271e1, type: 2}
+  moneyManager: {fileID: 0}
 --- !u!1 &5121775524198483349
 GameObject:
   m_ObjectHideFlags: 0

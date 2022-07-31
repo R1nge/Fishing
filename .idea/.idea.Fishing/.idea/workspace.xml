@@ -26,25 +26,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Map.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapCollision.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapCollision.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapFollowCamera.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapFollowCamera.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapMovement.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/FadeEnd.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/FadeEnd.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/FadeIdle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/FadeIdle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/TransitionImage.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/TransitionImage.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SaveManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SaveManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BayatGames/SaveGameFree/Scripts/SaveGameAuto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BayatGames/SaveGameFree/Scripts/SaveGameAuto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rod1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rod1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Home.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Home.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Island.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Island.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ocean.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ocean.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingFollowCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingCamera.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingFollowCamera.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JsonHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JsonHelper.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LoadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LoadScene.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoneyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoneyManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Rods/CurrentRod.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Rods/CurrentRod.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Fish/1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Fish/1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Fish/2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Fish/2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Fish/3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Fish/3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -67,11 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodStats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/Accelerometer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingHookSo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingHook.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishinRodViewSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodManager.cs" />
@@ -82,14 +91,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PixelCollider2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StatsUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UpdateManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishMovementController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FpsCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CacheStrings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DepthUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InitInputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIEventHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/DepthUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoneyUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Savemanager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FpsManager.cs" />
@@ -108,14 +115,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HookCollision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InventorySO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StatsUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodSo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MoneyUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishMovementController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/DepthUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FollowCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FishingFollowCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map/MapFollowCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map/Location.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LoadScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/BayatGames/SaveGameFree/Scripts/SaveGameAuto.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map/MapMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map/MapCollision.cs" />
       </list>
     </option>
   </component>
@@ -192,7 +208,9 @@
     <MESSAGE value="added fishing rod save manager" />
     <MESSAGE value="Added rod shop, fixed rods save manager, minor ui changes" />
     <MESSAGE value="Added transition, inventory, hookCollision; Updated ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added transition, inventory, hookCollision; Updated ui" />
+    <MESSAGE value="Imported Savegamefree package" />
+    <MESSAGE value="Refactored money and save managers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored money and save managers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1028" y="534" key="#Notifications" timestamp="1659106697084">
@@ -200,6 +218,10 @@
     </state>
     <state x="1028" y="534" key="#Notifications/0.0.2560.1410@0.0.2560.1410" timestamp="1659106697084" />
     <state x="1028" y="545" key="#Notifications/0.0.2560.1440@0.0.2560.1440" timestamp="1658427870718" />
+    <state x="973" y="507" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1659155282680">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="973" y="507" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1410@0.0.2560.1410" timestamp="1659155282680" />
     <state x="1142" y="605" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1659027472055">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -213,10 +235,10 @@
     </state>
     <state x="978" y="343" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1659090557763" />
     <state x="978" y="350" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1658130507046" />
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1659066264371">
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1659166534901">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1659066264371" />
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1659166534901" />
     <state x="872" y="453" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1658138959992" />
     <state x="1097" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1658941650916">
       <screen x="0" y="0" width="2560" height="1410" />
