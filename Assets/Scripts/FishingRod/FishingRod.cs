@@ -1,4 +1,5 @@
 ﻿using System;
+using Fishing;
 using UI;
 using UnityEngine;
 
@@ -11,10 +12,11 @@ namespace FishingRod
         [SerializeField] private DepthUI depthUI; //Generates garbage only in Mono
         private bool _canMove;
         private Vector3 _startPosition;
-        private Camera _mainCamera;
         private Rigidbody2D _rigidbody2D;
         private HookCollision _collision;
         private int _distance;
+        private BoatMovement _boatMovement;
+        private readonly float _center = Screen.width / 2f;
 
         private enum States
         {
@@ -27,15 +29,15 @@ namespace FishingRod
 
         private void Awake()
         {
-            _mainCamera = Camera.main;
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _rigidbody2D.WakeUp();
             _collision = GetComponent<HookCollision>();
+            _boatMovement = FindObjectOfType<BoatMovement>(); //TODO: Make Input manager that handles input data
         }
 
         private void Start()
         {
-            _startPosition = _rigidbody2D.position;
+            _startPosition = Vector3.zero;
             depthUI.UpdateUI(_distance);
         }
 
@@ -65,6 +67,7 @@ namespace FishingRod
         {
             if (Equals(_state, (States) Enum.Parse(typeof(States), "Up"))) return;
             _state = (States) Enum.Parse(typeof(States), state);
+            _boatMovement.enabled = false;
         }
 
         private void MoveDown()
@@ -101,19 +104,28 @@ namespace FishingRod
             if (!_canMove) return;
             if (transform.position.y < _startPosition.y)
             {
-                var touchPos = new Vector2(_mainCamera.ScreenToWorldPoint(target).x, 0);
+                var touchPos = new Vector2(target.x, 0);
+                if (touchPos.x < _center)
+                {
+                    _rigidbody2D.AddForce(new Vector2(-fishingRodSo.data.horizontalSpeed * Time.fixedDeltaTime, 0));
+                }
+                else if (touchPos.x > _center)
+                {
+                    _rigidbody2D.AddForce(new Vector2(fishingRodSo.data.horizontalSpeed * Time.fixedDeltaTime, 0));
+                }
+
                 var dir = new Vector2(0, fishingRodSo.data.verticalSpeed * Time.fixedDeltaTime);
                 _rigidbody2D.MovePosition(_rigidbody2D.position + dir);
-                _rigidbody2D.AddForce(touchPos * (fishingRodSo.data.horizontalSpeed * Time.fixedDeltaTime));
             }
             else
             {
                 _rigidbody2D.Sleep();
                 _rigidbody2D.velocity = Vector2.zero;
-                _rigidbody2D.position = _startPosition;
+                transform.localPosition = _startPosition;
                 _distance = 0;
                 _canMove = false;
                 DestroyChildren();
+                _boatMovement.enabled = true;
                 _state = States.Idle;
             }
         }

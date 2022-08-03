@@ -15,8 +15,5 @@ public class HookCollision : MonoBehaviour
         }
     }
 
-    public void AddToInventory(FishSO fish)
-    {
-        inventory.Add(fish);
-    }
+    public void AddToInventory(FishSO fish) => inventory.Add(fish);
 }

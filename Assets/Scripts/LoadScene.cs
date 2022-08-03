@@ -14,6 +14,7 @@ public class LoadScene : MonoBehaviour
 
     private IEnumerator Load_c(string title)
     {
+        if (string.Equals(levelName, SceneManager.GetActiveScene().name)) yield break;
         animator.SetTrigger(StartAnim);
         yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
 
