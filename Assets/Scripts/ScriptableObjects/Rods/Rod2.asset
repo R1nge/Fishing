@@ -23,4 +23,4 @@ MonoBehaviour:
     maxLength: 30
     verticalSpeed: 10
     horizontalSpeed: 15000
-    isUnlocked: 1
+    isUnlocked: 0

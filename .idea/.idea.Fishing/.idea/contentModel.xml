@@ -7,9 +7,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AddressableAssetsData" t="Include">
-          <e p="link.xml" t="Include" />
-        </e>
         <e p="BayatGames" t="Include">
           <e p="SaveGameFree" t="Include">
             <e p="Editor" t="Include">
@@ -56,6 +53,8 @@
           </e>
           <e p="Fishing" t="Include">
             <e p="BoatMovement.cs" t="Include" />
+            <e p="Line.cs" t="Include" />
+            <e p="Water.cs" t="Include" />
           </e>
           <e p="FishingFollowCamera.cs" t="Include" />
           <e p="FishingRod" t="Include">
@@ -80,11 +79,12 @@
             <e p="Oven.cs" t="Include" />
             <e p="Washer.cs" t="Include" />
           </e>
-          <e p="RodShop.cs" t="Include" />
           <e p="Savemanager.cs" t="Include" />
+          <e p="Shop.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="DepthUI.cs" t="Include" />
             <e p="MoneyUI.cs" t="Include" />
+            <e p="ShopUI.cs" t="Include" />
             <e p="StatsUI.cs" t="Include" />
           </e>
         </e>

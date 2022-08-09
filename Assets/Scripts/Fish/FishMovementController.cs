@@ -23,7 +23,7 @@ namespace Fish
 
         private void Update()
         {
-            if (transform.localPosition.x <= -maxPositionX)
+            if (transform.localPosition.x <= -6)
             {
                 _direction = Vector3.right;
                 FlipSprite();
