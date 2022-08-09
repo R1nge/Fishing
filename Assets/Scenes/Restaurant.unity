@@ -1067,6 +1067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Navbar
       objectReference: {fileID: 0}
+    - target: {fileID: 5721350984110711568, guid: 2cfa2ec4975cfae439b923a134dd1abd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5721350984110711569, guid: 2cfa2ec4975cfae439b923a134dd1abd, type: 3}
       propertyPath: m_RootOrder
       value: 4

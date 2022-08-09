@@ -1,7 +1,7 @@
 ﻿using FishingRod;
 using UnityEngine;
 
-public class RodShop : MonoBehaviour
+public class Shop : MonoBehaviour
 {
     [SerializeField] private FishingRodSo current;
     [SerializeField] private MoneyManager moneyManager;

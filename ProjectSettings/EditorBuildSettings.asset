@@ -9,14 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Fishing.unity
     guid: 0afaee8f65cc6e6438e744196a0db85e
   - enabled: 1
-    path: Assets/Scenes/Map.unity
-    guid: c3ee4bb0b272e6240ba4e86b5bd14d9b
-  - enabled: 1
     path: Assets/Scenes/Restaurant.unity
     guid: 96265e8cb58d88348958be7189bd75d5
-  - enabled: 1
-    path: Assets/Scenes/Shop.unity
-    guid: fe24f0ff0ae53694887c40344fcf8be1
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: ec9eaf23022712d449caba6544c0b8d3, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: cc24d5e200b842340bec680b5dd9eaa8, type: 2}

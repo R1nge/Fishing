@@ -21,6 +21,6 @@ MonoBehaviour:
     biteSprite: 1
     maxWeight: 1
     maxLength: 30
-    verticalSpeed: 10
+    verticalSpeed: 1
     horizontalSpeed: 15000
     isUnlocked: 1

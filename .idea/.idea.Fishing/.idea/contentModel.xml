@@ -52,7 +52,6 @@
             <e p="FishSO.cs" t="Include" />
           </e>
           <e p="Fishing" t="Include">
-            <e p="BoatMovement.cs" t="Include" />
             <e p="Line.cs" t="Include" />
             <e p="Water.cs" t="Include" />
           </e>
@@ -82,7 +81,7 @@
           <e p="Savemanager.cs" t="Include" />
           <e p="Shop.cs" t="Include" />
           <e p="UI" t="Include">
-            <e p="DepthUI.cs" t="Include" />
+            <e p="InGameUI.cs" t="Include" />
             <e p="MoneyUI.cs" t="Include" />
             <e p="ShopUI.cs" t="Include" />
             <e p="StatsUI.cs" t="Include" />
