@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    //Use dictionary?
     public List<FishSO> fish;
     private FishData[] _data;
     private readonly string _identifier = "inventory";
@@ -76,6 +77,8 @@ public class Inventory : MonoBehaviour
         print("Inventory loaded");
         yield break;
     }
+
+    private void OnDisable() => Save();
 
     private void OnApplicationQuit() => Save();
 }

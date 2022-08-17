@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57a6d0dd0b240da859e3dd2df5aabe0, type: 3}
+  m_Name: Sushi4
+  m_EditorClassIdentifier: 
+  fish: {fileID: 11400000, guid: f68563fead28e6d4784ee152ec50fc78, type: 2}
+  isWashed: 0
+  isChopped: 0
+  isCooked: 0
+  prefab: {fileID: 1551180865565081775, guid: d54738007ef359e46b4187b9c069e8c1, type: 3}
+  price: 100

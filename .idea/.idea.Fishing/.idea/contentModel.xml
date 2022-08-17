@@ -72,10 +72,27 @@
           </e>
           <e p="MoneyManager.cs" t="Include" />
           <e p="Restaurant" t="Include">
+            <e p="CookingManager.cs" t="Include" />
+            <e p="CookingRecipesManager.cs" t="Include" />
+            <e p="CookingRecipeSo.cs" t="Include" />
             <e p="CutTable.cs" t="Include" />
+            <e p="Dish.cs" t="Include" />
             <e p="Dishes.cs" t="Include" />
+            <e p="FishStatus.cs" t="Include" />
             <e p="Fridge.cs" t="Include" />
             <e p="Oven.cs" t="Include" />
+            <e p="Table.cs" t="Include" />
+            <e p="Tools" t="Include">
+              <e p="Knife.cs" t="Include" />
+              <e p="Soap.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="CookBookUI.cs" t="Include" />
+              <e p="CutTableUI.cs" t="Include" />
+              <e p="FridgeUI.cs" t="Include" />
+              <e p="TableUI.cs" t="Include" />
+              <e p="WasherUI.cs" t="Include" />
+            </e>
             <e p="Washer.cs" t="Include" />
           </e>
           <e p="Savemanager.cs" t="Include" />
@@ -155,6 +172,16 @@
           <e p="fishing_free" t="Include">
             <e p="item list.txt" t="Include" />
             <e p="license.txt" t="Include" />
+          </e>
+          <e p="FreePixelFood" t="Include">
+            <e p="Assets" t="Include">
+              <e p="FreePixelFood" t="Include">
+                <e p="README.txt" t="Include" />
+              </e>
+            </e>
+            <e p="ProjectSettings" t="Include">
+              <e p="ProjectVersion.txt" t="Include" />
+            </e>
           </e>
           <e p="interior free" t="Include">
             <e p="read me.txt" t="Include" />
