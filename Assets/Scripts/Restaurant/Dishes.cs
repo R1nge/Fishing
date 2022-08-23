@@ -23,14 +23,16 @@ namespace Restaurant
             var washed = _fishStatus.IsWashed == _cookingRecipesManager.Current.isWashed;
             var chopped = _fishStatus.IsChopped == _cookingRecipesManager.Current.isChopped;
             var cooked = _fishStatus.IsCooked == _cookingRecipesManager.Current.isCooked;
+            var salted = _fishStatus.IsSalted == _cookingRecipesManager.Current.isSalted;
+            var peppered = _fishStatus.IsPeppered == _cookingRecipesManager.Current.isPeppered;
 
-            if (hasFish && washed && chopped && cooked)
+            if (hasFish && washed && chopped && cooked && salted && peppered)
             {
                 Instantiate(_cookingRecipesManager.Current.prefab, transform.position, Quaternion.identity);
-                
+
                 foreach (var fish in _inventory.fish)
                 {
-                    if (fish == _cookingManager.CurrentFish)
+                    if (fish == _cookingManager.CurrentFish && fish.data.amount > 0)
                     {
                         fish.data.amount--;
                         break;

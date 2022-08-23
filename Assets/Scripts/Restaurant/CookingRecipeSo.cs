@@ -10,6 +10,8 @@ namespace Restaurant
         public bool isWashed;
         public bool isChopped;
         public bool isCooked;
+        public bool isSalted;
+        public bool isPeppered;
         public GameObject prefab;
         public int price;
     }

@@ -15,8 +15,9 @@ namespace Restaurant
             _cookingRecipesManager = FindObjectOfType<CookingRecipesManager>();
             _moneyManager = FindObjectOfType<MoneyManager>();
             _userInterface = GetComponent<TableUI>();
-            Pick();
         }
+
+        private void Start() => Pick();
 
         private void Pick()
         {

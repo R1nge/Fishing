@@ -16,5 +16,7 @@ MonoBehaviour:
   isWashed: 1
   isChopped: 1
   isCooked: 1
+  isSalted: 1
+  isPeppered: 1
   prefab: {fileID: 1551180865565081775, guid: 9e2d7edbfb17a8a4d9d1d5e9ee491bd1, type: 3}
   price: 100

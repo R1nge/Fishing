@@ -1,17 +1,18 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Restaurant
 {
     public class CookingRecipesManager : MonoBehaviour
     {
         public CookingRecipeSo Current { get; private set; }
-        [SerializeField] private List<CookingRecipeSo> recipes;
+        private Recipes _recipes;
 
+        private void Awake() => _recipes = FindObjectOfType<Recipes>();
+        
         public void Pick()
         {
-            var index = Random.Range(0, recipes.Count);
-            Current = recipes[index];
+            var index = Random.Range(0, _recipes.recipes.Count);
+            Current = _recipes.recipes[index];
 
             if (Current.fish.data.amount <= 0)
             {

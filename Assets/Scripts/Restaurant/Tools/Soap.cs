@@ -1,33 +1,28 @@
 ﻿using Restaurant.UI;
-using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace Restaurant.Tools
 {
-    public class Soap : MonoBehaviour, IDragHandler, IEndDragHandler
+    public class Soap : Tool
     {
-        private Vector3 _startPosition;
-        private FishStatus _fishStatus;
+        private int _progress;
         private WasherUI _ui;
 
-        private void Awake()
+        protected override void Awake()
         {
-            _startPosition = transform.position;
-            _fishStatus = FindObjectOfType<FishStatus>();
+            base.Awake();
             _ui = FindObjectOfType<WasherUI>();
         }
 
-        public void OnDrag(PointerEventData eventData) => transform.position = eventData.position;
-
-        public void OnEndDrag(PointerEventData eventData) => transform.position = _startPosition;
-
-        private void OnCollisionEnter2D(Collision2D other)
+        protected override void Action()
         {
-            if (other.transform.CompareTag("Fish"))
+            if (FishStatus.IsWashed) return;
+            _progress += 10;
+            _ui.UpdateProgressUI(_progress);
+
+            if (_progress >= 100)
             {
-                transform.position = _startPosition;
-                _fishStatus.Wash();
-                _ui.Close();
+                FishStatus.Wash();
+                _progress = 0;
             }
         }
     }
