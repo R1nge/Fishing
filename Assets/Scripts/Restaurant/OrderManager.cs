@@ -35,17 +35,25 @@ namespace Restaurant
                 EatTime(order);
                 return;
             }
-            //TODO: FIX FIX FIX FIX
-            for (int i = 0; i < completedOrder.Count; i++)
+
+            var hasEmpty = false;
+            var index = 0;
+            for (; index < completedOrder.Count; index++)
             {
-                if (completedOrder[i].GetDish() == null)
+                if (completedOrder[index].GetDish() == null)
                 {
-                    completedOrder[i] = order;
+                    hasEmpty = true;
+                    break;
                 }
-                else
-                {
-                    completedOrder.Add(order);
-                }
+            }
+
+            if (!hasEmpty)
+            {
+                completedOrder.Add(order);
+            }
+            else
+            {
+                completedOrder[index] = order;
             }
 
             EatTime(order);
