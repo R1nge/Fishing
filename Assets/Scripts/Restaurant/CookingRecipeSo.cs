@@ -1,4 +1,4 @@
-﻿using Fish;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Restaurant
@@ -6,13 +6,8 @@ namespace Restaurant
     [CreateAssetMenu(fileName = "Cooking Recipe", menuName = "Restaurant/Cooking Recipe")]
     public class CookingRecipeSo : ScriptableObject
     {
-        public FishSO fish;
-        public bool isWashed;
-        public bool isChopped;
-        public bool isCooked;
-        public bool isSalted;
-        public bool isPeppered;
+        public List<IngredientSo> ingredients;
         public GameObject prefab;
-        public int price;
+        public DishSo dish;
     }
 }

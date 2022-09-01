@@ -12,11 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57a6d0dd0b240da859e3dd2df5aabe0, type: 3}
   m_Name: Sushi1
   m_EditorClassIdentifier: 
-  fish: {fileID: 11400000, guid: 7704f4f2efb014b4d93f988bc6df09da, type: 2}
-  isWashed: 1
-  isChopped: 1
-  isCooked: 1
-  isSalted: 1
-  isPeppered: 1
+  ingredients:
+  - {fileID: 11400000, guid: 0434b8fce81315544b3230322f63b07d, type: 2}
+  - {fileID: 11400000, guid: 22f86ef2391780b498068b0f92e97e96, type: 2}
   prefab: {fileID: 1551180865565081775, guid: 9e2d7edbfb17a8a4d9d1d5e9ee491bd1, type: 3}
-  price: 100
+  dish: {fileID: 11400000, guid: 27b039e8f27950d4b804821324cac393, type: 2}

@@ -1,40 +1,25 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Restaurant
 {
-    public class Dish : MonoBehaviour
+    public class Dish : MonoBehaviour, IDragHandler
     {
-        [SerializeField] private CookingRecipeSo recipe;
-        private Vector3 _startPosition;
+        private DishSo _dish;
         private Camera _camera;
 
-        private void Awake()
-        {
-            _startPosition = transform.position;
-            _camera = Camera.main;
-        }
+        private void Awake() => _camera = Camera.main;
 
-        private void OnMouseDrag()
-        {
-            transform.position = _camera.ScreenToWorldPoint(
-                new Vector3(Input.mousePosition.x,
-                    Input.mousePosition.y,
-                    10)
-            );
-        }
+        public DishSo GetDish() => _dish;
 
-        private void OnMouseUp() => transform.position = _startPosition;
+        public void SetDish(DishSo value) => _dish = value;
 
-        private void OnCollisionEnter2D(Collision2D other)
+        public void OnDrag(PointerEventData eventData)
         {
-            if (other.transform.TryGetComponent(out Table table))
-            {
-                if (table.Current == recipe)
-                {
-                    table.CompleteOrder();
-                    Destroy(gameObject);
-                }
-            }
+            transform.position = new Vector3(
+                _camera.ScreenToWorldPoint(eventData.position).x,
+                _camera.ScreenToWorldPoint(eventData.position).y,
+                0);
         }
     }
 }

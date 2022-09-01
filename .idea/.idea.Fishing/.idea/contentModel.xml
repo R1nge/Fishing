@@ -62,6 +62,7 @@
             <e p="FishingRodView.cs" t="Include" />
           </e>
           <e p="FpsManager.cs" t="Include" />
+          <e p="GenericSingleton.cs" t="Include" />
           <e p="HookCollision.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
           <e p="LoadScene.cs" t="Include" />
@@ -72,35 +73,31 @@
           </e>
           <e p="MoneyManager.cs" t="Include" />
           <e p="Restaurant" t="Include">
-            <e p="CookingManager.cs" t="Include" />
-            <e p="CookingRecipesManager.cs" t="Include" />
+            <e p="BambooRollingMat.cs" t="Include" />
+            <e p="CookBook.cs" t="Include" />
             <e p="CookingRecipeSo.cs" t="Include" />
-            <e p="CutTable.cs" t="Include" />
             <e p="Dish.cs" t="Include" />
-            <e p="Dishes.cs" t="Include" />
-            <e p="FishStatus.cs" t="Include" />
-            <e p="Fridge.cs" t="Include" />
-            <e p="Oven.cs" t="Include" />
+            <e p="DishSo.cs" t="Include" />
+            <e p="Ingredient.cs" t="Include" />
+            <e p="IngredientSo.cs" t="Include" />
+            <e p="Order.cs" t="Include" />
+            <e p="OrderManager.cs" t="Include" />
+            <e p="OutsideTable.cs" t="Include" />
+            <e p="OutsideTableManager.cs" t="Include" />
+            <e p="Phone.cs" t="Include" />
             <e p="Recipes.cs" t="Include" />
             <e p="Table.cs" t="Include" />
-            <e p="Tools" t="Include">
-              <e p="Knife.cs" t="Include" />
-              <e p="Pepper.cs" t="Include" />
-              <e p="Salt.cs" t="Include" />
-              <e p="Soap.cs" t="Include" />
-              <e p="Tool.cs" t="Include" />
-            </e>
+            <e p="TableManager.cs" t="Include" />
+            <e p="Timer.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="CookBookUI.cs" t="Include" />
-              <e p="CutTableUI.cs" t="Include" />
-              <e p="FridgeUI.cs" t="Include" />
               <e p="TableUI.cs" t="Include" />
-              <e p="WasherUI.cs" t="Include" />
+              <e p="TimerUI.cs" t="Include" />
             </e>
-            <e p="Washer.cs" t="Include" />
           </e>
           <e p="Savemanager.cs" t="Include" />
           <e p="Shop.cs" t="Include" />
+          <e p="Sleep.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="InGameUI.cs" t="Include" />
             <e p="MoneyUI.cs" t="Include" />

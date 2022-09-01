@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Restaurant.unity
     guid: 96265e8cb58d88348958be7189bd75d5
+  - enabled: 1
+    path: Assets/Scenes/RestaurantTables.unity
+    guid: 7db3d5016aad4e34da9f2480b5416f3a
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: ec9eaf23022712d449caba6544c0b8d3, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: cc24d5e200b842340bec680b5dd9eaa8, type: 2}
