@@ -20,102 +20,18 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GenericSingleton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GenericSingleton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/BambooRollingMat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/BambooRollingMat.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookBook.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookBook.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/DishSo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/DishSo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Ingredient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Ingredient.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/IngredientSo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/IngredientSo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Order.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Order.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Phone.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Phone.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/TableManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/TableManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Timer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Timer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TimerUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TimerUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sleep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sleep.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ingredient.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ingredient.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ingredient.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ingredient.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sashimi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sashimi.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/FishSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/FishSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookingManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookingManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookingRecipeSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookingRecipeSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookingRecipesManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookingRecipesManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CutTable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CutTable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Dish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Dish.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Dishes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Dishes.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/FishStatus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/FishStatus.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Fridge.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Fridge.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Oven.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Oven.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Recipes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Recipes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/OutsideTable.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/OutsideTable.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RestaurantTables.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RestaurantTables.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Knife.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Knife.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Pepper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Pepper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Salt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Salt.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Soap.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Soap.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Tool.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Tool.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/CookBookUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/CookBookUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/CutTableUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/CutTableUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/FridgeUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/FridgeUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TableUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TableUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TableUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TableUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/WasherUI.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/WasherUI.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Washer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Washer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi1.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi2.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi2.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi3.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi3.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi4.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CookingRecipes/Sushi4.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,11 +103,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TableUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Order.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/TableManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" />
       </list>
     </option>
   </component>
@@ -276,7 +192,8 @@
     <MESSAGE value="[BugFix] UI, fishing" />
     <MESSAGE value="Added Restaurant" />
     <MESSAGE value="[ADD] Washer, salt, pepper" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Washer, salt, pepper" />
+    <MESSAGE value="[Change] Restaurant" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Change] Restaurant" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1784" y="235" key="#Code_Folding" timestamp="1660734538041">
@@ -309,10 +226,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="92" y="92" width="2376" height="1226" key="VCS.FileHistoryDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1661408804401" />
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1661274894848">
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1662027126118">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1661274894848" />
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1662027126118" />
     <state x="872" y="453" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1658138959992" />
     <state x="1097" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1658941650916">
       <screen x="0" y="0" width="2560" height="1410" />

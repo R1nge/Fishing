@@ -11,7 +11,6 @@ namespace Restaurant
         [SerializeField] private int minWaitTime, maxWaitTime;
         [SerializeField] private Sprite[] sprites;
         private CookingRecipeSo _current;
-        private MoneyManager _moneyManager;
         private Recipes _recipes;
         private TableUI _ui;
         private int _tolerance;
@@ -22,7 +21,6 @@ namespace Restaurant
 
         private void Awake()
         {
-            _moneyManager = FindObjectOfType<MoneyManager>();
             _recipes = FindObjectOfType<Recipes>();
             _ui = GetComponent<TableUI>();
         }
@@ -43,10 +41,8 @@ namespace Restaurant
             }
             else
             {
-                Pick();
+                StartCoroutine(Pick_c());
             }
-
-            _ui.UpdateTolerance(_tolerance.ToString(CultureInfo.InvariantCulture));
         }
 
         private void DecreaseTolerance()
@@ -76,7 +72,7 @@ namespace Restaurant
 
         private void CompleteOrder()
         {
-            _moneyManager.Earn(_current.dish.price);
+            OrderManager.Instance.Complete(OrderManager.Instance.GetOrders[_index]);
             StartCoroutine(Pick_c());
         }
 
@@ -88,7 +84,7 @@ namespace Restaurant
             _ui.UpdateSprite(null);
             _hasOrder = false;
             _current = null;
-            yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime));
+            yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime)); //BUG
             Pick();
         }
 
@@ -106,7 +102,7 @@ namespace Restaurant
             order.SetOrder(_current);
             OrderManager.Instance.Add(order, _index);
             _hasOrder = true;
-            Init(_index);
+            Init(_index); //BUG
         }
 
         private void UpdateUI()
