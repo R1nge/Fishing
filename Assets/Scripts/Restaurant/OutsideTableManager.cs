@@ -35,7 +35,7 @@ namespace Restaurant
             var completeOrders = _orderManager.GetCompletedOrders;
             for (int i = 0; i < completeOrders.Count; i++)
             {
-                if (outsideTables[i] == null) continue;
+                if (completeOrders[i] == null) continue;
                 outsideTables[i].SetCustomer(completeOrders[i].GetCustomer());
                 outsideTables[i].SetOrder(completeOrders[i]);
                 outsideTables[i].SetDish(completeOrders[i].GetStatus() ? moneySprite : completeOrders[i].GetDish());
@@ -44,6 +44,7 @@ namespace Restaurant
 
         private void OnDestroy()
         {
+            if (_orderManager == null) return;
             for (int i = 0; i < _orderManager.GetCompletedOrders.Count; i++)
             {
                 _orderManager.GetCompletedOrders[i].OnStatusChanged -= Init;

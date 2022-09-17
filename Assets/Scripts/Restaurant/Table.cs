@@ -27,7 +27,7 @@ namespace Restaurant
         private void Start()
         {
             Init(_index);
-            InvokeRepeating("DecreaseTolerance", 5, 1);
+            InvokeRepeating("DecreaseTolerance", 1, 1);
         }
 
         public void SetIndex(int index) => _index = index;
@@ -108,7 +108,6 @@ namespace Restaurant
             order.SetOrder(_current);
             _orderManager.Add(order, _index);
             _hasOrder = true;
-            Init(_index);
         }
 
         private void PickTolerance() => _tolerance = Random.Range(minTolerance, maxTolerance);
