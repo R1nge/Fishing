@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Fish
 {
-    [CreateAssetMenu(fileName = "FishData", menuName = "SO/Fish")]
+    [CreateAssetMenu(fileName = "FishData", menuName = "Fishing/Fish")]
     public class FishSO : ScriptableObject
     {
         public Sprite icon;
