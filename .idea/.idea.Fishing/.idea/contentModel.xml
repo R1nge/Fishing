@@ -82,15 +82,18 @@
             <e p="IngredientSo.cs" t="Include" />
             <e p="Order.cs" t="Include" />
             <e p="OrderManager.cs" t="Include" />
+            <e p="OrdersData.cs" t="Include" />
             <e p="OutsideTable.cs" t="Include" />
             <e p="OutsideTableManager.cs" t="Include" />
             <e p="Phone.cs" t="Include" />
             <e p="Recipes.cs" t="Include" />
             <e p="Table.cs" t="Include" />
             <e p="TableManager.cs" t="Include" />
+            <e p="TablesData.cs" t="Include" />
             <e p="Timer.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="CookBookUI.cs" t="Include" />
+              <e p="OutsideTableUI.cs" t="Include" />
               <e p="TableUI.cs" t="Include" />
               <e p="TimerUI.cs" t="Include" />
             </e>

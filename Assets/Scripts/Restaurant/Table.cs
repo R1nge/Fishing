@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Globalization;
 using Restaurant.UI;
 using UnityEngine;
 
@@ -10,6 +9,7 @@ namespace Restaurant
         [SerializeField] private int minTolerance, maxTolerance;
         [SerializeField] private int minWaitTime, maxWaitTime;
         [SerializeField] private Sprite[] sprites;
+        private OrderManager _orderManager;
         private CookingRecipeSo _current;
         private Recipes _recipes;
         private TableUI _ui;
@@ -17,25 +17,30 @@ namespace Restaurant
         private bool _hasOrder;
         private int _index;
 
-        //OrderManager.Instance;
-
         private void Awake()
         {
+            _orderManager = FindObjectOfType<OrderManager>();
             _recipes = FindObjectOfType<Recipes>();
             _ui = GetComponent<TableUI>();
         }
 
-        private void Start() => InvokeRepeating("DecreaseTolerance", 1, 1);
-
-        public void Init(int index)
+        private void Start()
         {
-            _index = index;
-            var orders = OrderManager.Instance.GetOrders;
-            if (orders.Count > index && orders[index].GetOrder() != null)
+            Init(_index);
+            InvokeRepeating("DecreaseTolerance", 5, 1);
+        }
+
+        public void SetIndex(int index) => _index = index;
+
+        private void Init(int index)
+        {
+            var orders = _orderManager.GetOrdersData;
+            if (orders.Count > index && orders[index] != null && orders[index].GetOrder() != null)
             {
                 _current = orders[index].GetOrder();
                 _tolerance = orders[index].GetTolerance();
-                UpdateUI();
+                _ui.UpdateOrder(_current.name);
+                _ui.UpdateTolerance(_tolerance.ToString());
                 _ui.UpdateSprite(orders[index].GetCustomer());
                 _hasOrder = true;
             }
@@ -50,7 +55,7 @@ namespace Restaurant
             if (!_hasOrder) return;
             _tolerance -= 1;
             _ui.UpdateTolerance(_tolerance.ToString());
-            OrderManager.Instance.GetOrders[_index].SetTolerance(_tolerance);
+            _orderManager.GetOrdersData[_index].SetTolerance(_tolerance);
             if (_tolerance <= 0)
             {
                 StartCoroutine(Pick_c());
@@ -72,19 +77,19 @@ namespace Restaurant
 
         private void CompleteOrder()
         {
-            OrderManager.Instance.Complete(OrderManager.Instance.GetOrders[_index]);
+            _orderManager.Complete(_orderManager.GetOrdersData[_index]);
             StartCoroutine(Pick_c());
         }
 
         private IEnumerator Pick_c()
         {
-            OrderManager.Instance.Remove(_index);
+            _orderManager.Remove(_index);
             _ui.UpdateOrder(null);
             _ui.UpdateTolerance(null);
             _ui.UpdateSprite(null);
             _hasOrder = false;
             _current = null;
-            yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime)); //BUG
+            yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime));
             Pick();
         }
 
@@ -92,7 +97,8 @@ namespace Restaurant
         {
             _current = _recipes.Pick();
             PickTolerance();
-            UpdateUI();
+            _ui.UpdateOrder(_current.name);
+            _ui.UpdateTolerance(_tolerance.ToString());
             _ui.UpdateSprite(sprites[Random.Range(0, sprites.Length)]);
             var order = new Order();
             order.SetSprite(_ui.GetSprite());
@@ -100,15 +106,9 @@ namespace Restaurant
             order.SetStatus(false);
             order.SetTolerance(_tolerance);
             order.SetOrder(_current);
-            OrderManager.Instance.Add(order, _index);
+            _orderManager.Add(order, _index);
             _hasOrder = true;
-            Init(_index); //BUG
-        }
-
-        private void UpdateUI()
-        {
-            _ui.UpdateOrder(_current.name);
-            _ui.UpdateTolerance(_tolerance.ToString());
+            Init(_index);
         }
 
         private void PickTolerance() => _tolerance = Random.Range(minTolerance, maxTolerance);

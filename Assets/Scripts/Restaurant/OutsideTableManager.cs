@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Restaurant
@@ -6,6 +7,18 @@ namespace Restaurant
     public class OutsideTableManager : MonoBehaviour
     {
         [SerializeField] private List<OutsideTable> outsideTables;
+        [SerializeField] private Sprite moneySprite;
+        private OrderManager _orderManager;
+
+        private void Awake()
+        {
+            _orderManager = FindObjectOfType<OrderManager>();
+
+            for (int i = 0; i < _orderManager.GetCompletedOrders.Count; i++)
+            {
+                _orderManager.GetCompletedOrders[i].OnStatusChanged += Init;
+            }
+        }
 
         private void Start() => Init();
 
@@ -14,14 +27,26 @@ namespace Restaurant
             for (int i = 0; i < outsideTables.Count; i++)
             {
                 outsideTables[i].SetIndex(i);
-                outsideTables[i].SetSprite(null);
+                outsideTables[i].SetCustomer(null);
                 outsideTables[i].SetOrder(null);
+                outsideTables[i].SetDish(null);
             }
 
-            for (int i = 0; i < OrderManager.Instance.GetCompletedOrders.Count; i++)
+            var completeOrders = _orderManager.GetCompletedOrders;
+            for (int i = 0; i < completeOrders.Count; i++)
             {
-                outsideTables[i].SetSprite(OrderManager.Instance.GetCompletedOrders[i].GetCustomer());
-                outsideTables[i].SetOrder(OrderManager.Instance.GetCompletedOrders[i]);
+                if (outsideTables[i] == null) continue;
+                outsideTables[i].SetCustomer(completeOrders[i].GetCustomer());
+                outsideTables[i].SetOrder(completeOrders[i]);
+                outsideTables[i].SetDish(completeOrders[i].GetStatus() ? moneySprite : completeOrders[i].GetDish());
+            }
+        }
+
+        private void OnDestroy()
+        {
+            for (int i = 0; i < _orderManager.GetCompletedOrders.Count; i++)
+            {
+                _orderManager.GetCompletedOrders[i].OnStatusChanged -= Init;
             }
         }
     }

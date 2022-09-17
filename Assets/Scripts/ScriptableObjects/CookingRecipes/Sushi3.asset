@@ -16,5 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 22f86ef2391780b498068b0f92e97e96, type: 2}
   - {fileID: 11400000, guid: 0434b8fce81315544b3230322f63b07d, type: 2}
   - {fileID: 11400000, guid: d67ab07c6ccab734a80d9d342b1b72a8, type: 2}
-  prefab: {fileID: 1551180865565081775, guid: 3127c7ffac48bed4ba48a3d4b1b35982, type: 3}
+  prefab: {fileID: 1551180865565081775, guid: e231da0a3048203458b61ab02b98c60a, type: 3}
   dish: {fileID: 11400000, guid: a499aaae31655d74085db6580940f656, type: 2}

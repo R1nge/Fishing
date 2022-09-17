@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Restaurant
 {
-    [System.Serializable]
+    [Serializable]
     public class Order
     {
         [SerializeField] private Sprite customer;
@@ -10,6 +11,7 @@ namespace Restaurant
         [SerializeField] private bool finished;
         [SerializeField] private int tolerance;
         [SerializeField] private CookingRecipeSo order;
+        public event Action OnStatusChanged;
 
         public Sprite GetCustomer() => customer;
         public Sprite GetDish() => dish;
@@ -19,7 +21,13 @@ namespace Restaurant
 
         public void SetSprite(Sprite sprite) => customer = sprite;
         public void SetDish(Sprite sprite) => dish = sprite;
-        public void SetStatus(bool value) => finished = value;
+
+        public void SetStatus(bool value)
+        {
+            finished = value;
+            OnStatusChanged?.Invoke();
+        }
+
         public void SetTolerance(int value) => tolerance = value;
         public void SetOrder(CookingRecipeSo recipe) => order = recipe;
     }

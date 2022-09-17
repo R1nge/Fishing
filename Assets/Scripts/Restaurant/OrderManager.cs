@@ -4,43 +4,42 @@ using UnityEngine;
 
 namespace Restaurant
 {
-    public class OrderManager : GenericSingleton<OrderManager>
+    public class OrderManager : MonoBehaviour
     {
-        [SerializeField] private List<Order> orders;
-        [SerializeField] private List<Order> completedOrder;
-
         public void Add(Order order, int index)
         {
-            if (orders.Count <= index)
+            if (OrdersData.Instance.orders.Count <= index)
             {
-                orders.Add(order);
+                OrdersData.Instance.orders.Add(order);
             }
             else
             {
-                orders[index] = order;
+                OrdersData.Instance.orders[index] = order;
             }
         }
 
         public void Remove(int index)
         {
-            if (orders.Count > index)
-                orders[index] = null;
+            if (OrdersData.Instance.orders.Count > index)
+                OrdersData.Instance.orders[index] = null;
         }
 
         public void Complete(Order order)
         {
-            if (completedOrder.Count <= 0)
+            if (OrdersData.Instance.completedOrder.Count <= 0)
             {
-                completedOrder.Add(order);
+                OrdersData.Instance.completedOrder.Add(order);
                 EatTime(order);
+                TablesData.FreeAmount--;
+                TablesData.Update();
                 return;
             }
 
             var hasEmpty = false;
             var index = 0;
-            for (; index < completedOrder.Count; index++)
+            for (; index < OrdersData.Instance.completedOrder.Count; index++)
             {
-                if (completedOrder[index].GetDish() == null)
+                if (OrdersData.Instance.completedOrder[index].GetDish() == null)
                 {
                     hasEmpty = true;
                     break;
@@ -49,14 +48,16 @@ namespace Restaurant
 
             if (!hasEmpty)
             {
-                completedOrder.Add(order);
+                OrdersData.Instance.completedOrder.Add(order);
             }
             else
             {
-                completedOrder[index] = order;
+                OrdersData.Instance.completedOrder[index] = order;
             }
 
             EatTime(order);
+            TablesData.FreeAmount--;
+            TablesData.Update();
         }
 
         private void EatTime(Order order) => StartCoroutine(EatTime_c(order));
@@ -67,10 +68,15 @@ namespace Restaurant
             order.SetStatus(true);
         }
 
-        public void Clean(int index) => completedOrder[index] = null;
+        public void Clean(int index)
+        {
+            OrdersData.Instance.completedOrder[index] = null;
+            TablesData.FreeAmount++;
+            TablesData.Update();
+        }
 
-        public List<Order> GetOrders => orders;
+        public List<Order> GetOrdersData => OrdersData.Instance.orders;
 
-        public List<Order> GetCompletedOrders => completedOrder;
+        public List<Order> GetCompletedOrders => OrdersData.Instance.completedOrder;
     }
 }

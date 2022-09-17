@@ -4,28 +4,38 @@ namespace Restaurant
 {
     public class OutsideTable : MonoBehaviour
     {
-        [SerializeField] private SpriteRenderer spriteRenderer;
+        [SerializeField] private SpriteRenderer customer;
+        [SerializeField] private SpriteRenderer dish;
         private MoneyManager _moneyManager;
         private int _index;
         private Order _order;
+        private OrderManager _orderManager;
 
-        private void Awake() => _moneyManager = FindObjectOfType<MoneyManager>();
+        private void Awake()
+        {
+            _moneyManager = FindObjectOfType<MoneyManager>();
+            _orderManager = FindObjectOfType<OrderManager>();
+        }
 
         public void SetIndex(int value) => _index = value;
 
-        public void SetSprite(Sprite sprite) => spriteRenderer.sprite = sprite;
+        public void SetCustomer(Sprite sprite) => customer.sprite = sprite;
+
+        public void SetDish(Sprite sprite) => dish.sprite = sprite;
 
         public void SetOrder(Order order) => _order = order;
 
-
         private void OnMouseDown()
         {
-            if (OrderManager.Instance.GetCompletedOrders[_index].GetStatus())
+            var completeOrders = _orderManager.GetCompletedOrders;
+            if (completeOrders.Count <= _index) return;
+            if (completeOrders[_index].GetStatus())
             {
                 _moneyManager.Earn(_order.GetOrder().dish.price);
-                SetSprite(null);
+                SetCustomer(null);
+                SetDish(null);
                 SetOrder(null);
-                OrderManager.Instance.Clean(_index);
+                _orderManager.Clean(_index);
             }
         }
     }
