@@ -29,6 +29,7 @@ namespace Restaurant
         {
             var completeOrders = _orderManager.GetCompletedOrders;
             if (completeOrders.Count <= _index) return;
+            if (completeOrders[_index] == null) return;
             if (completeOrders[_index].GetStatus())
             {
                 _moneyManager.Earn(_order.GetOrder().dish.price);

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Restaurant
 {
-    public class OrderManager : MonoBehaviour
+    public class OrderManager : GenericSingleton<OrderManager>
     {
         public void Add(Order order, int index)
         {

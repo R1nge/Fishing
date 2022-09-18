@@ -9,7 +9,6 @@ namespace Restaurant
         [SerializeField] private int minTolerance, maxTolerance;
         [SerializeField] private int minWaitTime, maxWaitTime;
         [SerializeField] private Sprite[] sprites;
-        private OrderManager _orderManager;
         private CookingRecipeSo _current;
         private Recipes _recipes;
         private TableUI _ui;
@@ -19,7 +18,6 @@ namespace Restaurant
 
         private void Awake()
         {
-            _orderManager = FindObjectOfType<OrderManager>();
             _recipes = FindObjectOfType<Recipes>();
             _ui = GetComponent<TableUI>();
         }
@@ -34,7 +32,7 @@ namespace Restaurant
 
         private void Init(int index)
         {
-            var orders = _orderManager.GetOrdersData;
+            var orders = OrderManager.Instance.GetOrdersData;
             if (orders.Count > index && orders[index] != null && orders[index].GetOrder() != null)
             {
                 _current = orders[index].GetOrder();
@@ -55,7 +53,7 @@ namespace Restaurant
             if (!_hasOrder) return;
             _tolerance -= 1;
             _ui.UpdateTolerance(_tolerance.ToString());
-            _orderManager.GetOrdersData[_index].SetTolerance(_tolerance);
+            OrderManager.Instance.GetOrdersData[_index].SetTolerance(_tolerance);
             if (_tolerance <= 0)
             {
                 StartCoroutine(Pick_c());
@@ -69,6 +67,7 @@ namespace Restaurant
             {
                 if (dish.GetDish().title == _current.dish.title)
                 {
+                    //BUG: Can complete 2 orders simultaneously with one dish
                     CompleteOrder();
                     Destroy(dish.gameObject);
                 }
@@ -77,13 +76,13 @@ namespace Restaurant
 
         private void CompleteOrder()
         {
-            _orderManager.Complete(_orderManager.GetOrdersData[_index]);
+            OrderManager.Instance.Complete(OrderManager.Instance.GetOrdersData[_index]);
             StartCoroutine(Pick_c());
         }
 
         private IEnumerator Pick_c()
         {
-            _orderManager.Remove(_index);
+            OrderManager.Instance.Remove(_index);
             _ui.UpdateOrder(null);
             _ui.UpdateTolerance(null);
             _ui.UpdateSprite(null);
@@ -106,7 +105,7 @@ namespace Restaurant
             order.SetStatus(false);
             order.SetTolerance(_tolerance);
             order.SetOrder(_current);
-            _orderManager.Add(order, _index);
+            OrderManager.Instance.Add(order, _index);
             _hasOrder = true;
         }
 

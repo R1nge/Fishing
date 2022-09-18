@@ -26,9 +26,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RestaurantTables.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RestaurantTables.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +44,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIElements/PanelEventHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/UnityProjects/Fishing/Assets/Scripts/Restaurant/OutsideTable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/UnityProjects/Fishing/Assets/Scripts/Restaurant/OutsideTableManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Runtime/ResourceManager/Util/DelayedActionManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Runtime/ResourceManager/Util/MonoBehaviourCallbackHooks.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/UnityProjects/Fishing/Assets/Prefabs/OutsideTable.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -96,13 +97,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/OutsideTableUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Orders.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Order.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/TableManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" />
       </list>
     </option>
   </component>
@@ -165,7 +166,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added save system, fishingRods, sprites" />
     <MESSAGE value="New sprites, fish sprite facing move direction" />
     <MESSAGE value="Optimization" />
     <MESSAGE value="Added addressables" />
@@ -190,7 +190,8 @@
     <MESSAGE value="[FIX] Restaurant orders" />
     <MESSAGE value="[ADD] Cats, sushi, coin sprites" />
     <MESSAGE value="[ADD] OutsideTable ui&#10;[Change] Orders refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] OutsideTable ui&#10;[Change] Orders refactor" />
+    <MESSAGE value="Bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1784" y="235" key="#Code_Folding" timestamp="1660734538041">
@@ -223,15 +224,15 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="92" y="92" width="2376" height="1226" key="VCS.FileHistoryDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1661408804401" />
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1663422051740">
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1663433809069">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1663422051740" />
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1663433809069" />
     <state x="872" y="453" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1658138959992" />
-    <state x="1097" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1658941650916">
+    <state x="1097" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1663473338232">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="1097" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410@0.0.2560.1410" timestamp="1658941650916" />
+    <state x="1097" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410@0.0.2560.1410" timestamp="1663473338232" />
     <state x="943" y="318" width="672" height="678" key="search.everywhere.popup" timestamp="1659467402388">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
