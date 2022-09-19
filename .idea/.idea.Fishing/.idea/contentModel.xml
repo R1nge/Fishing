@@ -93,6 +93,7 @@
             <e p="Timer.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="CookBookUI.cs" t="Include" />
+              <e p="IngredientUI.cs" t="Include" />
               <e p="OutsideTableUI.cs" t="Include" />
               <e p="TableUI.cs" t="Include" />
               <e p="TimerUI.cs" t="Include" />

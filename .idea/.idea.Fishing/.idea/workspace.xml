@@ -25,13 +25,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/IngredientUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/IngredientUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ingredient.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ingredient.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inventory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Inventory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/RestaurantTables.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RestaurantTables.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Fish/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Fish/Fish.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HookCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HookCollision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/BambooRollingMat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/BambooRollingMat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Ingredient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Ingredient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/IngredientSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/IngredientSo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Ingredients/BlueFish.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Ingredients/BlueFish.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Ingredients/RedFish.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Ingredients/RedFish.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Ingredients/YellowFish.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Ingredients/YellowFish.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,12 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/RecepySo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/PrescriptionSo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Oven.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Fridge.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/wA.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/FridgeUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Washer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/CutTable.cs" />
@@ -75,17 +84,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Fish/FishSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/DishSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookingManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/IngredientSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Phone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookingRecipesManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Recipes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookingRecipeSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Dishes.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Ingredient.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Dish.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/CookBookUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GenericSingletonClass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/BambooRollingMat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sleep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TableUI.cs" />
@@ -99,11 +105,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Orders.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Order.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/TableManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/IngreditentUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/IngredientUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/IngredientSo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/BambooRollingMat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HookCollision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Fish/Fish.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Ingredient.cs" />
       </list>
     </option>
   </component>
@@ -224,10 +239,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="92" y="92" width="2376" height="1226" key="VCS.FileHistoryDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1661408804401" />
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1663433809069">
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1663479798158">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1663433809069" />
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1663479798158" />
     <state x="872" y="453" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1658138959992" />
     <state x="1097" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1663473338232">
       <screen x="0" y="0" width="2560" height="1410" />

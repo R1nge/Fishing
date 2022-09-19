@@ -1,4 +1,5 @@
 using Fish;
+using Restaurant;
 using UnityEngine;
 
 public class HookCollision : MonoBehaviour
@@ -15,5 +16,5 @@ public class HookCollision : MonoBehaviour
         }
     }
 
-    public void AddToInventory(FishSO fish) => inventory.Add(fish);
+    public void AddToInventory(IngredientSo fish) => inventory.Add(fish);
 }

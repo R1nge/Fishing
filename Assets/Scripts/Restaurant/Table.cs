@@ -68,8 +68,9 @@ namespace Restaurant
                 if (dish.GetDish().title == _current.dish.title)
                 {
                     //BUG: Can complete 2 orders simultaneously with one dish
-                    CompleteOrder();
+                    //Maybe fixed
                     Destroy(dish.gameObject);
+                    CompleteOrder();
                 }
             }
         }

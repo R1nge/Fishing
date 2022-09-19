@@ -52,7 +52,17 @@ namespace Restaurant
                 }
             }
 
+            TakeIngredients();
             DestroyChildren();
+            _ingredients.Clear();
+        }
+
+        private void TakeIngredients()
+        {
+            for (int i = 0; i < _ingredients.Count; i++)
+            {
+                _ingredients[i].Decrease(1);
+            }
         }
 
         private void DestroyChildren()
@@ -62,8 +72,6 @@ namespace Restaurant
                 if (positions[i].childCount == 0) continue;
                 Destroy(positions[i].GetChild(0).gameObject);
             }
-
-            _ingredients.Clear();
         }
     }
 }

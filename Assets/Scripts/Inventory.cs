@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using BayatGames.SaveGameFree;
-using Fish;
+using Restaurant;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
     //Use dictionary?
-    public List<FishSO> fish;
-    private FishData[] _data;
+    public List<IngredientSo> fish;
+    private Data[] _data;
     private readonly string _identifier = "inventory";
 
     private void Awake()
@@ -19,7 +19,7 @@ public class Inventory : MonoBehaviour
             Save();
     }
 
-    public void Add(FishSO newFish)
+    public void Add(IngredientSo newFish)
     {
         if (fish.Contains(newFish))
         {
@@ -32,7 +32,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void Remove(FishSO fishToRemove)
+    public void Remove(IngredientSo fishToRemove)
     {
         if (fishToRemove.data.amount > 0)
             fishToRemove.data.amount--;
@@ -42,7 +42,7 @@ public class Inventory : MonoBehaviour
 
     private void Save()
     {
-        _data = new FishData[fish.Count];
+        _data = new Data[fish.Count];
 
         for (int i = 0; i < fish.Count; i++)
         {
@@ -62,7 +62,7 @@ public class Inventory : MonoBehaviour
 
     private void Load()
     {
-        _data = SaveGame.Load<FishData[]>(_identifier);
+        _data = SaveGame.Load<Data[]>(_identifier);
 
         for (int i = 0; i < fish.Count; i++)
         {

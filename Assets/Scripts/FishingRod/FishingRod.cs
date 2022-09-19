@@ -69,9 +69,9 @@ namespace FishingRod
         {
             if (!_canCatch) return;
 
-            if (other.TryGetComponent(out Fish.Fish myfish))
+            if (other.TryGetComponent(out Fish.Fish fish))
             {
-                _collision.AddToInventory(myfish.fishSo);
+                _collision.AddToInventory(fish.ingredient);
                 _canCatch = false;
             }
 
