@@ -41,5 +41,6 @@ namespace Restaurant
     public class Data
     {
         public int amount;
+        public int tempAmount;
     }
 }

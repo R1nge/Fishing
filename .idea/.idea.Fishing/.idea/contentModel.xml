@@ -49,7 +49,6 @@
           <e p="Fish" t="Include">
             <e p="Fish.cs" t="Include" />
             <e p="FishMovementController.cs" t="Include" />
-            <e p="FishSO.cs" t="Include" />
           </e>
           <e p="Fishing" t="Include">
             <e p="Line.cs" t="Include" />

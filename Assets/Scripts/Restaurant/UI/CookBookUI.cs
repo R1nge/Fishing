@@ -30,7 +30,7 @@ namespace Restaurant.UI
                 instance.transform.position += new Vector3(0, -i * verticalDistance);
                 var result = instance.GetComponentInChildren<Image>();
                 result.sprite = _recipes.recipes[i].prefab.GetComponent<SpriteRenderer>().sprite;
-                instance.GetComponentInChildren<TextMeshProUGUI>().text = _recipes.recipes[i].name;
+                instance.transform.Find("Name").GetComponent<TextMeshProUGUI>().text = _recipes.recipes[i].name;
 
                 for (int j = 0; j < _recipes.recipes[i].ingredients.Count; j++)
                 {
@@ -40,6 +40,15 @@ namespace Restaurant.UI
                     go.transform.localPosition = Vector3.zero;
                     var icon = go.AddComponent<Image>();
                     icon.sprite = ingredient.icon;
+                    GameObject amount = new GameObject("Amount");
+                    amount.transform.parent = go.transform;
+                    amount.transform.localPosition = new Vector3(40,-30,0);
+                    var amountText = amount.AddComponent<TextMeshProUGUI>();
+                    amountText.text = _recipes.recipes[i].amounts[j].ToString();
+                    amountText.alignment = TextAlignmentOptions.Center;
+                    amountText.horizontalAlignment = HorizontalAlignmentOptions.Center;
+                    amountText.color = Color.white;
+                    amountText.fontStyle = FontStyles.Bold;
                 }
             }
 

@@ -30,6 +30,8 @@ public class Inventory : MonoBehaviour
             fish.Add(newFish);
             newFish.data.amount++;
         }
+        
+        Save();
     }
 
     public void Remove(IngredientSo fishToRemove)
