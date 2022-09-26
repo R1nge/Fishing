@@ -24,25 +24,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CustomerSprites.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/CustomerSprites.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/OrderManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/OrderManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Order.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Order.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrderManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TimerUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TimerUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
-    </list>
+    <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +70,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Sleep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TableUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GenericSingleton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Timer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/OutsideTableUI.cs" />
@@ -115,6 +96,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/CustomerSprites.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TimerUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Timer.cs" />
       </list>
     </option>
   </component>
@@ -177,7 +159,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Optimization" />
     <MESSAGE value="Added addressables" />
     <MESSAGE value="made rod movement frame rate independent" />
     <MESSAGE value="DepthUI fix" />
@@ -202,7 +183,8 @@
     <MESSAGE value="[ADD] OutsideTable ui&#10;[Change] Orders refactor" />
     <MESSAGE value="Bug fixes" />
     <MESSAGE value="[ADD] Ingredients amount UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Ingredients amount UI" />
+    <MESSAGE value="Refactoring, optimizations, bugfixes (Order, OrdersData, Tables(Sprites))" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring, optimizations, bugfixes (Order, OrdersData, Tables(Sprites))" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1784" y="235" key="#Code_Folding" timestamp="1660734538041">
