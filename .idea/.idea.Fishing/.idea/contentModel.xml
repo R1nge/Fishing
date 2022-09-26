@@ -75,12 +75,12 @@
             <e p="BambooRollingMat.cs" t="Include" />
             <e p="CookBook.cs" t="Include" />
             <e p="CookingRecipeSo.cs" t="Include" />
+            <e p="CustomerSprites.cs" t="Include" />
             <e p="Dish.cs" t="Include" />
             <e p="DishSo.cs" t="Include" />
             <e p="Ingredient.cs" t="Include" />
             <e p="IngredientSo.cs" t="Include" />
             <e p="Order.cs" t="Include" />
-            <e p="OrderManager.cs" t="Include" />
             <e p="OrdersData.cs" t="Include" />
             <e p="OutsideTable.cs" t="Include" />
             <e p="OutsideTableManager.cs" t="Include" />

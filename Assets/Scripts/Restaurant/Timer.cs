@@ -11,8 +11,15 @@ namespace Restaurant
         private const int MINTIME = 0;
         private const int MAXTIME = 24;
         public event Action<int, int> OnTimeUpdated;
+        //TODO: Fix UI
+        public override void Awake()
+        {
+            base.Awake();
+            StartCoroutine(Timer_c());
+            OnTimeUpdated?.Invoke(Hours, Minutes);
+        }
 
-        private void Start() => StartCoroutine(Timer_c());
+        private void Start() => OnTimeUpdated?.Invoke(Hours, Minutes);
 
         private IEnumerator Timer_c()
         {
@@ -31,7 +38,7 @@ namespace Restaurant
 
                     Minutes = 0;
                 }
-                
+
                 OnTimeUpdated?.Invoke(Hours, Minutes);
             }
         }

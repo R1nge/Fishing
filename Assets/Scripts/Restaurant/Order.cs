@@ -10,14 +10,14 @@ namespace Restaurant
         [SerializeField] private Sprite dish;
         [SerializeField] private bool finished;
         [SerializeField] private int tolerance;
-        [SerializeField] private CookingRecipeSo order;
+        [SerializeField] private CookingRecipeSo recipe;
         public event Action OnStatusChanged;
 
         public Sprite GetCustomer() => customer;
         public Sprite GetDish() => dish;
         public bool GetStatus() => finished;
         public int GetTolerance() => tolerance;
-        public CookingRecipeSo GetOrder() => order;
+        public CookingRecipeSo GetRecipe() => recipe;
 
         public void SetSprite(Sprite sprite) => customer = sprite;
         public void SetDish(Sprite sprite) => dish = sprite;
@@ -29,6 +29,6 @@ namespace Restaurant
         }
 
         public void SetTolerance(int value) => tolerance = value;
-        public void SetOrder(CookingRecipeSo recipe) => order = recipe;
+        public void SetRecipe(CookingRecipeSo value) => recipe = value;
     }
 }
