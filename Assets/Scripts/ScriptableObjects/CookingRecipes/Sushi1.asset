@@ -15,5 +15,6 @@ MonoBehaviour:
   ingredients:
   - {fileID: 11400000, guid: 0434b8fce81315544b3230322f63b07d, type: 2}
   - {fileID: 11400000, guid: 22f86ef2391780b498068b0f92e97e96, type: 2}
+  amounts: 0100000001000000
   prefab: {fileID: 1551180865565081775, guid: 9e2d7edbfb17a8a4d9d1d5e9ee491bd1, type: 3}
   dish: {fileID: 11400000, guid: 27b039e8f27950d4b804821324cac393, type: 2}

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Restaurant
@@ -8,19 +7,16 @@ namespace Restaurant
     {
         [SerializeField] private List<OutsideTable> outsideTables;
         [SerializeField] private Sprite moneySprite;
-        private OrderManager _orderManager;
 
-        private void Awake()
+        private void Start()
         {
-            _orderManager = FindObjectOfType<OrderManager>();
-
-            for (int i = 0; i < _orderManager.GetCompletedOrders.Count; i++)
+            for (int i = 0; i < OrdersData.Instance.GetCompletedOrders.Count; i++)
             {
-                _orderManager.GetCompletedOrders[i].OnStatusChanged += Init;
+                OrdersData.Instance.GetCompletedOrders[i].OnStatusChanged += Init;
             }
-        }
 
-        private void Start() => Init();
+            Init();
+        }
 
         private void Init()
         {
@@ -32,7 +28,7 @@ namespace Restaurant
                 outsideTables[i].SetDish(null);
             }
 
-            var completeOrders = _orderManager.GetCompletedOrders;
+            var completeOrders = OrdersData.Instance.GetCompletedOrders;
             for (int i = 0; i < completeOrders.Count; i++)
             {
                 if (completeOrders[i] == null) continue;
@@ -44,10 +40,10 @@ namespace Restaurant
 
         private void OnDestroy()
         {
-            if (_orderManager == null) return;
-            for (int i = 0; i < _orderManager.GetCompletedOrders.Count; i++)
+            if (OrdersData.Instance == null) return;
+            for (int i = 0; i < OrdersData.Instance.GetCompletedOrders.Count; i++)
             {
-                _orderManager.GetCompletedOrders[i].OnStatusChanged -= Init;
+                OrdersData.Instance.GetCompletedOrders[i].OnStatusChanged -= Init;
             }
         }
     }

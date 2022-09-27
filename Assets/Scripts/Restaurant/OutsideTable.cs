@@ -7,15 +7,10 @@ namespace Restaurant
         [SerializeField] private SpriteRenderer customer;
         [SerializeField] private SpriteRenderer dish;
         private MoneyManager _moneyManager;
-        private int _index;
         private Order _order;
-        private OrderManager _orderManager;
+        private int _index;
 
-        private void Awake()
-        {
-            _moneyManager = FindObjectOfType<MoneyManager>();
-            _orderManager = FindObjectOfType<OrderManager>();
-        }
+        private void Awake() => _moneyManager = FindObjectOfType<MoneyManager>();
 
         public void SetIndex(int value) => _index = value;
 
@@ -27,15 +22,16 @@ namespace Restaurant
 
         private void OnMouseDown()
         {
-            var completeOrders = _orderManager.GetCompletedOrders;
+            var completeOrders = OrdersData.Instance.GetCompletedOrders;
             if (completeOrders.Count <= _index) return;
+            if (completeOrders[_index] == null) return;
             if (completeOrders[_index].GetStatus())
             {
-                _moneyManager.Earn(_order.GetOrder().dish.price);
+                _moneyManager.Earn(_order.GetRecipe().dish.price);
                 SetCustomer(null);
                 SetDish(null);
                 SetOrder(null);
-                _orderManager.Clean(_index);
+                OrdersData.Instance.Clean(_index);
             }
         }
     }

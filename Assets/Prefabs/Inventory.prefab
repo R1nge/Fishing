@@ -45,7 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fish:
-  - {fileID: 11400000, guid: 7704f4f2efb014b4d93f988bc6df09da, type: 2}
-  - {fileID: 11400000, guid: 3a1307687fa0d0649b6e0c772da63c04, type: 2}
-  - {fileID: 11400000, guid: 0ca42e63dec28364189bfd651bb5ccd1, type: 2}
-  - {fileID: 11400000, guid: f68563fead28e6d4784ee152ec50fc78, type: 2}
+  - {fileID: 11400000, guid: 0434b8fce81315544b3230322f63b07d, type: 2}
+  - {fileID: 11400000, guid: 22f86ef2391780b498068b0f92e97e96, type: 2}
+  - {fileID: 11400000, guid: d67ab07c6ccab734a80d9d342b1b72a8, type: 2}

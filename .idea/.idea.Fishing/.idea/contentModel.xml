@@ -45,43 +45,48 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CameraZoom.cs" t="Include" />
           <e p="Fish" t="Include">
             <e p="Fish.cs" t="Include" />
             <e p="FishMovementController.cs" t="Include" />
-            <e p="FishSO.cs" t="Include" />
           </e>
           <e p="Fishing" t="Include">
             <e p="Line.cs" t="Include" />
             <e p="Water.cs" t="Include" />
           </e>
-          <e p="FishingFollowCamera.cs" t="Include" />
           <e p="FishingRod" t="Include">
             <e p="FishingRod.cs" t="Include" />
             <e p="FishingRodSo.cs" t="Include" />
             <e p="FishingRodView.cs" t="Include" />
+            <e p="HookCollision.cs" t="Include" />
+            <e p="Savemanager.cs" t="Include" />
+            <e p="Shop.cs" t="Include" />
           </e>
-          <e p="FpsManager.cs" t="Include" />
-          <e p="GenericSingleton.cs" t="Include" />
-          <e p="HookCollision.cs" t="Include" />
-          <e p="Inventory.cs" t="Include" />
-          <e p="LoadScene.cs" t="Include" />
           <e p="Map" t="Include">
             <e p="MapCollision.cs" t="Include" />
             <e p="MapFollowCamera.cs" t="Include" />
             <e p="MapMovement.cs" t="Include" />
           </e>
-          <e p="MoneyManager.cs" t="Include" />
+          <e p="Other" t="Include">
+            <e p="CameraZoom.cs" t="Include" />
+            <e p="FishingFollowCamera.cs" t="Include" />
+            <e p="FpsManager.cs" t="Include" />
+            <e p="GenericSingleton.cs" t="Include" />
+            <e p="LoadScene.cs" t="Include" />
+            <e p="MoneyManager.cs" t="Include" />
+            <e p="Sleep.cs" t="Include" />
+            <e p="Timer.cs" t="Include" />
+          </e>
           <e p="Restaurant" t="Include">
             <e p="BambooRollingMat.cs" t="Include" />
             <e p="CookBook.cs" t="Include" />
             <e p="CookingRecipeSo.cs" t="Include" />
+            <e p="CustomerSprites.cs" t="Include" />
             <e p="Dish.cs" t="Include" />
             <e p="DishSo.cs" t="Include" />
             <e p="Ingredient.cs" t="Include" />
             <e p="IngredientSo.cs" t="Include" />
+            <e p="Inventory.cs" t="Include" />
             <e p="Order.cs" t="Include" />
-            <e p="OrderManager.cs" t="Include" />
             <e p="OrdersData.cs" t="Include" />
             <e p="OutsideTable.cs" t="Include" />
             <e p="OutsideTableManager.cs" t="Include" />
@@ -90,22 +95,77 @@
             <e p="Table.cs" t="Include" />
             <e p="TableManager.cs" t="Include" />
             <e p="TablesData.cs" t="Include" />
-            <e p="Timer.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="CookBookUI.cs" t="Include" />
+              <e p="IngredientUI.cs" t="Include" />
               <e p="OutsideTableUI.cs" t="Include" />
               <e p="TableUI.cs" t="Include" />
               <e p="TimerUI.cs" t="Include" />
             </e>
           </e>
-          <e p="Savemanager.cs" t="Include" />
-          <e p="Shop.cs" t="Include" />
-          <e p="Sleep.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="InGameUI.cs" t="Include" />
             <e p="MoneyUI.cs" t="Include" />
             <e p="ShopUI.cs" t="Include" />
             <e p="StatsUI.cs" t="Include" />
+          </e>
+          <e p="ZString" t="Include">
+            <e p="EnumUtil.cs" t="Include" />
+            <e p="ExceptionUtil.cs" t="Include" />
+            <e p="FastNumberWriter.cs" t="Include" />
+            <e p="FormatHelper.cs" t="Include" />
+            <e p="FormatParser.cs" t="Include" />
+            <e p="IResettableBufferWriter.cs" t="Include" />
+            <e p="NestedStringBuilderCreationException.cs" t="Include" />
+            <e p="Number" t="Include">
+              <e p="BitOperations.cs" t="Include" />
+              <e p="BufferEx.cs" t="Include" />
+              <e p="DecimalEx.cs" t="Include" />
+              <e p="FloatEx.cs" t="Include" />
+              <e p="FormattingHelpers.cs" t="Include" />
+              <e p="GuidEx.cs" t="Include" />
+              <e p="HexConverter.cs" t="Include" />
+              <e p="InternalSpanEx.cs" t="Include" />
+              <e p="MathEx.cs" t="Include" />
+              <e p="Number.BigInteger.cs" t="Include" />
+              <e p="Number.DiyFp.cs" t="Include" />
+              <e p="Number.Dragon4.cs" t="Include" />
+              <e p="Number.Formatting.cs" t="Include" />
+              <e p="Number.Grisu3.cs" t="Include" />
+              <e p="Number.NumberBuffer.cs" t="Include" />
+              <e p="Number.NumberToFloatingPointBits.cs" t="Include" />
+              <e p="Number.Parsing.cs" t="Include" />
+              <e p="NumberFormatInfoEx.cs" t="Include" />
+              <e p="ValueStringBuilder.cs" t="Include" />
+            </e>
+            <e p="PreparedFormat.cs" t="Include" />
+            <e p="PreparedFormatHelper.cs" t="Include" />
+            <e p="ReadOnlyListAdaptor.cs" t="Include" />
+            <e p="Shims.cs" t="Include" />
+            <e p="StringBuilder.AppendJoin.cs" t="Include" />
+            <e p="Unity" t="Include">
+              <e p="TextMeshProExtensions.cs" t="Include" />
+              <e p="TextMeshProExtensions.SetStringBuilder.cs" t="Include" />
+            </e>
+            <e p="Utf16" t="Include">
+              <e p="Utf16ValueStringBuilder.AppendFormat.cs" t="Include" />
+              <e p="Utf16ValueStringBuilder.CreateFormatter.cs" t="Include" />
+              <e p="Utf16ValueStringBuilder.SpanFormattableAppend.cs" t="Include" />
+            </e>
+            <e p="Utf16ValueStringBuilder.cs" t="Include" />
+            <e p="Utf8" t="Include">
+              <e p="Utf8ValueStringBuilder.AppendFormat.cs" t="Include" />
+              <e p="Utf8ValueStringBuilder.CreateFormatter.cs" t="Include" />
+              <e p="Utf8ValueStringBuilder.SpanFormattableAppend.cs" t="Include" />
+            </e>
+            <e p="Utf8ValueStringBuilder.cs" t="Include" />
+            <e p="ZString.asmdef" t="Include" />
+            <e p="ZString.Concat.cs" t="Include" />
+            <e p="ZString.cs" t="Include" />
+            <e p="ZString.Format.cs" t="Include" />
+            <e p="ZString.Prepare.cs" t="Include" />
+            <e p="ZString.Utf8Format.cs" t="Include" />
+            <e p="ZStringWriter.cs" t="Include" />
           </e>
         </e>
         <e p="Simple Scroll-Snap" t="Include">
@@ -238,6 +298,7 @@
       <e p="Temp\Bin" t="ExcludeRecursive" />
       <e p="Utilities.csproj" t="IncludeRecursive" />
       <e p="UtilitiesEditor.csproj" t="IncludeRecursive" />
+      <e p="ZString.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

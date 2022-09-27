@@ -7,6 +7,7 @@ namespace Restaurant
     public class CookingRecipeSo : ScriptableObject
     {
         public List<IngredientSo> ingredients;
+        public List<int> amounts;
         public GameObject prefab;
         public DishSo dish;
     }
