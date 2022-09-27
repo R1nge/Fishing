@@ -45,7 +45,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CameraZoom.cs" t="Include" />
           <e p="Fish" t="Include">
             <e p="Fish.cs" t="Include" />
             <e p="FishMovementController.cs" t="Include" />
@@ -54,23 +53,29 @@
             <e p="Line.cs" t="Include" />
             <e p="Water.cs" t="Include" />
           </e>
-          <e p="FishingFollowCamera.cs" t="Include" />
           <e p="FishingRod" t="Include">
             <e p="FishingRod.cs" t="Include" />
             <e p="FishingRodSo.cs" t="Include" />
             <e p="FishingRodView.cs" t="Include" />
+            <e p="HookCollision.cs" t="Include" />
+            <e p="Savemanager.cs" t="Include" />
+            <e p="Shop.cs" t="Include" />
           </e>
-          <e p="FpsManager.cs" t="Include" />
-          <e p="GenericSingleton.cs" t="Include" />
-          <e p="HookCollision.cs" t="Include" />
-          <e p="Inventory.cs" t="Include" />
-          <e p="LoadScene.cs" t="Include" />
           <e p="Map" t="Include">
             <e p="MapCollision.cs" t="Include" />
             <e p="MapFollowCamera.cs" t="Include" />
             <e p="MapMovement.cs" t="Include" />
           </e>
-          <e p="MoneyManager.cs" t="Include" />
+          <e p="Other" t="Include">
+            <e p="CameraZoom.cs" t="Include" />
+            <e p="FishingFollowCamera.cs" t="Include" />
+            <e p="FpsManager.cs" t="Include" />
+            <e p="GenericSingleton.cs" t="Include" />
+            <e p="LoadScene.cs" t="Include" />
+            <e p="MoneyManager.cs" t="Include" />
+            <e p="Sleep.cs" t="Include" />
+            <e p="Timer.cs" t="Include" />
+          </e>
           <e p="Restaurant" t="Include">
             <e p="BambooRollingMat.cs" t="Include" />
             <e p="CookBook.cs" t="Include" />
@@ -80,6 +85,7 @@
             <e p="DishSo.cs" t="Include" />
             <e p="Ingredient.cs" t="Include" />
             <e p="IngredientSo.cs" t="Include" />
+            <e p="Inventory.cs" t="Include" />
             <e p="Order.cs" t="Include" />
             <e p="OrdersData.cs" t="Include" />
             <e p="OutsideTable.cs" t="Include" />
@@ -89,7 +95,6 @@
             <e p="Table.cs" t="Include" />
             <e p="TableManager.cs" t="Include" />
             <e p="TablesData.cs" t="Include" />
-            <e p="Timer.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="CookBookUI.cs" t="Include" />
               <e p="IngredientUI.cs" t="Include" />
@@ -98,9 +103,6 @@
               <e p="TimerUI.cs" t="Include" />
             </e>
           </e>
-          <e p="Savemanager.cs" t="Include" />
-          <e p="Shop.cs" t="Include" />
-          <e p="Sleep.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="InGameUI.cs" t="Include" />
             <e p="MoneyUI.cs" t="Include" />
