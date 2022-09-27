@@ -1,53 +1,66 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
+using Cysharp.Text;
+using TMPro;
 using UnityEngine;
 
 namespace Restaurant
 {
     public class Timer : GenericSingleton<Timer>
     {
-        public int Hours { get; private set; }
-        public int Minutes { get; private set; }
-        private const int MINTIME = 0;
-        private const int MAXTIME = 24;
-        public event Action<int, int> OnTimeUpdated;
+        [SerializeField] private TextMeshProUGUI text;
+        private byte _hours;
+        private byte _minutes;
+        private const byte MINTIME = 0;
+        private const byte MAXTIME = 24;
+        private const float DELAY = 0.1f;
+        private YieldInstruction _yield;
 
         public override void Awake()
         {
             base.Awake();
+            _yield = new WaitForSeconds(DELAY);
             StartCoroutine(Timer_c());
-            OnTimeUpdated?.Invoke(Hours, Minutes);
         }
-
-        private void Start() => OnTimeUpdated?.Invoke(Hours, Minutes);
 
         private IEnumerator Timer_c()
         {
             while (enabled)
             {
-                yield return new WaitForSeconds(.4f);
+                yield return _yield;
 
-                Minutes++;
-                if (Minutes >= 60)
+                _minutes++;
+                if (_minutes >= 60)
                 {
-                    Hours++;
-                    if (Hours >= MAXTIME)
+                    _hours++;
+                    if (_hours >= MAXTIME)
                     {
-                        Hours = MINTIME;
+                        _hours = MINTIME;
                     }
 
-                    Minutes = 0;
+                    _minutes = 0;
                 }
 
-                OnTimeUpdated?.Invoke(Hours, Minutes);
+                UpdateUI();
             }
         }
 
-        public void SetTime(int hours, int minutes)
+        public void SetTime(byte hours, byte minutes)
         {
-            Hours = hours;
-            Minutes = minutes;
-            OnTimeUpdated?.Invoke(Hours, Minutes);
+            _hours = hours;
+            _minutes = minutes;
+            UpdateUI();
+        }
+
+        private void UpdateUI()
+        {
+            if (_hours >= 10)
+            {
+                text.SetTextFormat(_minutes >= 10 ? "{0}:{1}" : "{0}:0{1}", _hours, _minutes);
+            }
+            else
+            {
+                text.SetTextFormat(_minutes >= 10 ? "0{0}:{1}" : "0{0}:0{1}", _hours, _minutes);
+            }
         }
     }
 }

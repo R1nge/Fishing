@@ -10,7 +10,7 @@ namespace UI
 
         private void Awake() => moneyManager.OnMoneyAmountChanged += UpdateUI;
 
-        private void UpdateUI(int value) => text.text = value.ToString();
+        private void UpdateUI(int value) => text.SetText(value.ToString());
 
         private void OnDestroy() => moneyManager.OnMoneyAmountChanged -= UpdateUI;
     }
