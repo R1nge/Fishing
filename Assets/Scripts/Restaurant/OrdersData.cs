@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Other;
 using UnityEngine;
 
 namespace Restaurant
 {
-    public class OrdersData : GenericSingleton<OrdersData>
+    public class OrdersData : Singleton<OrdersData>
     {
         public List<Order> orders = new List<Order>(6);
         public List<Order> completedOrder;

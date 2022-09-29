@@ -1,12 +1,14 @@
-﻿using Restaurant;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class Sleep : MonoBehaviour
+namespace Other
 {
-    [SerializeField] private Button button;
+    public class Sleep : MonoBehaviour
+    {
+        [SerializeField] private Button button;
 
-    private void OnEnable() => button.onClick.AddListener(delegate { Timer.Instance.SetTime(6, 0); });
+        private void OnEnable() => button.onClick.AddListener(delegate { Timer.Instance.SetTime(6, 0); });
 
-    private void OnDisable() => button.onClick.RemoveAllListeners();
+        private void OnDisable() => button.onClick.RemoveAllListeners();
+    }
 }

@@ -3,83 +3,85 @@ using System.Collections;
 using System.Text.RegularExpressions;
 using BayatGames.SaveGameFree;
 using DanielLochner.Assets.SimpleScrollSnap;
-using FishingRod;
 using UnityEngine;
 
-public class SaveManager : MonoBehaviour
+namespace FishingRod
 {
-    [SerializeField] private FishingRodSo[] so;
-    private RodData[] _data;
-    private readonly string _identifier = "rods";
-    private SimpleScrollSnap _scroll;
-
-    private void Awake()
+    public class SaveManager : MonoBehaviour
     {
-        _scroll = FindObjectOfType<SimpleScrollSnap>();
-        if (SaveGame.Exists(_identifier))
-            Load();
-        else
-            Save();
-    }
+        [SerializeField] private FishingRodSo[] so;
+        private RodData[] _data;
+        private readonly string _identifier = "rods";
+        private SimpleScrollSnap _scroll;
 
-    private void Save()
-    {
-        _data = new RodData[so.Length];
-
-        for (int i = 0; i < so.Length; i++)
+        private void Awake()
         {
-            _data[i] = so[i].data;
+            _scroll = FindObjectOfType<SimpleScrollSnap>();
+            if (SaveGame.Exists(_identifier))
+                Load();
+            else
+                Save();
         }
 
-        SaveGame.Save(_identifier, _data);
-    }
-
-    public void SaveCloud() => StartCoroutine(SaveCloud_c());
-
-    private IEnumerator SaveCloud_c()
-    {
-        print("Rods saved");
-        yield break;
-    }
-
-    private void Load()
-    {
-        _data = SaveGame.Load<RodData[]>(_identifier);
-
-        for (int i = 0; i < so.Length; i++)
+        private void Save()
         {
-            so[i].data = _data[i];
-            so[i].OnSpriteChanged += Save;
+            _data = new RodData[so.Length];
+
+            for (int i = 0; i < so.Length; i++)
+            {
+                _data[i] = so[i].data;
+            }
+
+            SaveGame.Save(_identifier, _data);
         }
 
-        ShowSelected();
-    }
+        public void SaveCloud() => StartCoroutine(SaveCloud_c());
 
-    public void LoadCloud() => StartCoroutine(LoadCloud_c());
-
-    private IEnumerator LoadCloud_c()
-    {
-        print("Rods loaded");
-        yield break;
-    }
-
-    private void ShowSelected()
-    {
-        if (_scroll == null) return;
-        var str = Regex.Replace(so[0].data.rodTitle, "\\D+", String.Empty);
-        if (str.Length > 0)
+        private IEnumerator SaveCloud_c()
         {
-            _scroll.StartingPanel = int.Parse(str) - 1;
+            print("Rods saved");
+            yield break;
         }
-    }
 
-    private void OnApplicationQuit() => Save();
-
-    private void OnDestroy()
-    {
-        for (int i = 0; i < so.Length; i++)
+        private void Load()
         {
-            so[i].OnSpriteChanged -= Save;
+            _data = SaveGame.Load<RodData[]>(_identifier);
+
+            for (int i = 0; i < so.Length; i++)
+            {
+                so[i].data = _data[i];
+                so[i].OnSpriteChanged += Save;
+            }
+
+            ShowSelected();
+        }
+
+        public void LoadCloud() => StartCoroutine(LoadCloud_c());
+
+        private IEnumerator LoadCloud_c()
+        {
+            print("Rods loaded");
+            yield break;
+        }
+
+        private void ShowSelected()
+        {
+            if (_scroll == null) return;
+            var str = Regex.Replace(so[0].data.rodTitle, "\\D+", String.Empty);
+            if (str.Length > 0)
+            {
+                _scroll.StartingPanel = int.Parse(str) - 1;
+            }
+        }
+
+        private void OnApplicationQuit() => Save();
+
+        private void OnDestroy()
+        {
+            for (int i = 0; i < so.Length; i++)
+            {
+                so[i].OnSpriteChanged -= Save;
+            }
         }
     }
 }

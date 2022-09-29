@@ -1,23 +1,26 @@
-﻿using FishingRod;
+﻿using Other;
 using UnityEngine;
 
-public class Shop : MonoBehaviour
+namespace FishingRod
 {
-    [SerializeField] private FishingRodSo current;
-    [SerializeField] private MoneyManager moneyManager;
-
-    public void BuyRod(FishingRodSo so)
+    public class Shop : MonoBehaviour
     {
-        if (so.data.isUnlocked)
-        {
-            current.SetAll(so);
-            return;
-        }
+        [SerializeField] private FishingRodSo current;
+        [SerializeField] private MoneyManager moneyManager;
 
-        if (moneyManager.Spend(so.price))
+        public void BuyRod(FishingRodSo so)
         {
-            so.Unlock(so);
-            current.SetAll(so);
+            if (so.data.isUnlocked)
+            {
+                current.SetAll(so);
+                return;
+            }
+
+            if (moneyManager.Spend(so.price))
+            {
+                so.Unlock(so);
+                current.SetAll(so);
+            }
         }
     }
 }

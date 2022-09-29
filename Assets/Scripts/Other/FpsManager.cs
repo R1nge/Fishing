@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 
-public class FpsManager : MonoBehaviour
+namespace Other
 {
-    [SerializeField] private int fps;
+    public class FpsManager : MonoBehaviour
+    {
+        [SerializeField] private int fps;
 
-    private void Awake() => Application.targetFrameRate = fps;
+        private void Awake() => Application.targetFrameRate = fps;
+    }
 }

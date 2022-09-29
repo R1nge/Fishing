@@ -70,9 +70,9 @@
             <e p="CameraZoom.cs" t="Include" />
             <e p="FishingFollowCamera.cs" t="Include" />
             <e p="FpsManager.cs" t="Include" />
-            <e p="GenericSingleton.cs" t="Include" />
             <e p="LoadScene.cs" t="Include" />
             <e p="MoneyManager.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
             <e p="Sleep.cs" t="Include" />
             <e p="Timer.cs" t="Include" />
           </e>

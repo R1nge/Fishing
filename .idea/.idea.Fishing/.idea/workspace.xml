@@ -26,18 +26,28 @@
   <component name="ChangeListManager">
     <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Timer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Timer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/HookCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/HookCollision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/SaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/Shop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapCollision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/CameraZoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/CameraZoom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/FishingFollowCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/FishingFollowCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/FpsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/FpsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/GenericSingleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/GenericSingleton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Singleton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/LoadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/LoadScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/MoneyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/MoneyManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/Sleep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Sleep.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TimerUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TimerUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/MoneyUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MoneyUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/StatsUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/StatsUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,17 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Salt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Knife.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Pepper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Tool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Tools/Soap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/WasherUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookBook.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Ingrediend.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRodSo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/DishSo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookingManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Phone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/CookingRecipesManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Recipes.cs" />
@@ -87,7 +86,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/OutsideTableUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Orders.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/TableManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/IngreditentUI.cs" />
@@ -114,6 +112,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StatsUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TimerUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Other/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Other/CameraZoom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Other/FishingFollowCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Other/FpsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Other/LoadScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Other/MoneyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Other/Singleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Other/Sleep.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/HookCollision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/SaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FishingRod/Shop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesData.cs" />
       </list>
     </option>
   </component>
@@ -176,7 +186,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="DepthUI fix" />
     <MESSAGE value="fps manager" />
     <MESSAGE value="scroll snap" />
     <MESSAGE value="added money, fishing rods" />
@@ -201,7 +210,8 @@
     <MESSAGE value="Refactoring, optimizations, bugfixes (Order, OrdersData, Tables(Sprites))" />
     <MESSAGE value="[FIX] Timer UI" />
     <MESSAGE value="Mentally destroyed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mentally destroyed" />
+    <MESSAGE value="ZString, minor optimizations" />
+    <option name="LAST_COMMIT_MESSAGE" value="ZString, minor optimizations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1784" y="235" key="#Code_Folding" timestamp="1660734538041">
@@ -234,10 +244,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="92" y="92" width="2376" height="1226" key="VCS.FileHistoryDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1661408804401" />
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1664277249453">
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1664290728899">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1664277249453" />
+    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1664290728899" />
     <state x="872" y="453" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1658138959992" />
     <state x="1097" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1663473338232">
       <screen x="0" y="0" width="2560" height="1410" />

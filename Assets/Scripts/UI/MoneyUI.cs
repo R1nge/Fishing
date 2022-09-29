@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using Other;
+using TMPro;
 using UnityEngine;
 
 namespace UI

@@ -2,6 +2,7 @@
 
 namespace Restaurant
 {
+    //TODO: Use Scriptable object
     public static class TablesData
     {
         public static int FreeAmount = 10;

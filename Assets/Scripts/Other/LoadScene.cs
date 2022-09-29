@@ -2,27 +2,30 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadScene : MonoBehaviour
+namespace Other
 {
-    [SerializeField] private string levelName;
-    [SerializeField] private Animator animator;
-    private static readonly int StartAnim = Animator.StringToHash("Start");
-
-    public void LoadWithString() => StartCoroutine(Load_c(levelName));
-
-    public void Load(string title) => StartCoroutine(Load_c(title));
-
-    private IEnumerator Load_c(string title)
+    public class LoadScene : MonoBehaviour
     {
-        if (string.Equals(levelName, SceneManager.GetActiveScene().name)) yield break;
-        animator.SetTrigger(StartAnim);
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+        [SerializeField] private string levelName;
+        [SerializeField] private Animator animator;
+        private static readonly int StartAnim = Animator.StringToHash("Start");
 
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(title);
+        public void LoadWithString() => StartCoroutine(Load_c(levelName));
 
-        while (!asyncLoad.isDone)
+        public void Load(string title) => StartCoroutine(Load_c(title));
+
+        private IEnumerator Load_c(string title)
         {
-            yield return null;
+            if (string.Equals(levelName, SceneManager.GetActiveScene().name)) yield break;
+            animator.SetTrigger(StartAnim);
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(title);
+
+            while (!asyncLoad.isDone)
+            {
+                yield return null;
+            }
         }
     }
 }

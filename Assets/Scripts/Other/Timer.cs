@@ -3,17 +3,25 @@ using Cysharp.Text;
 using TMPro;
 using UnityEngine;
 
-namespace Restaurant
+namespace Other
 {
-    public class Timer : GenericSingleton<Timer>
+    public class Timer : Singleton<Timer>
     {
+        //TODO: Write unit test
         [SerializeField] private TextMeshProUGUI text;
+        [SerializeField] private Type timeType;
         private byte _hours;
         private byte _minutes;
         private const byte MINTIME = 0;
         private const byte MAXTIME = 24;
         private const float DELAY = 0.1f;
         private YieldInstruction _yield;
+
+        private enum Type
+        {
+            Hour12,
+            Hour24
+        }
 
         public override void Awake()
         {
@@ -53,13 +61,35 @@ namespace Restaurant
 
         private void UpdateUI()
         {
-            if (_hours >= 10)
+            if (timeType == Type.Hour12)
             {
-                text.SetTextFormat(_minutes >= 10 ? "{0}:{1}" : "{0}:0{1}", _hours, _minutes);
+                if (_hours > 12)
+                {
+                    text.SetTextFormat(_minutes >= 10 ? "{0}:{1} PM" : "{0}:0{1} PM", _hours % 12, _minutes);
+                }
+                else
+                {
+                    if (_hours >= 10)
+                    {
+                        text.SetTextFormat(_minutes >= 10 ? "{0}:{1} AM" : "{0}:0{1} AM", _hours, _minutes);
+                    }
+                    else
+                    {
+                        text.SetTextFormat(_minutes >= 10 ? "0{0}:{1} AM" : "0{0}:0{1} AM", _hours, _minutes);
+                    }
+                }
             }
-            else
+
+            if (timeType == Type.Hour24)
             {
-                text.SetTextFormat(_minutes >= 10 ? "0{0}:{1}" : "0{0}:0{1}", _hours, _minutes);
+                if (_hours >= 10)
+                {
+                    text.SetTextFormat(_minutes >= 10 ? "{0}:{1}" : "{0}:0{1}", _hours, _minutes);
+                }
+                else
+                {
+                    text.SetTextFormat(_minutes >= 10 ? "0{0}:{1}" : "0{0}:0{1}", _hours, _minutes);
+                }
             }
         }
     }

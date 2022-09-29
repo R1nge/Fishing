@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 8274367346678890149}
+  timeType: 1
 --- !u!1 &8805951270345519555
 GameObject:
   m_ObjectHideFlags: 0
