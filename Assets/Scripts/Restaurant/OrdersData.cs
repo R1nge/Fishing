@@ -9,6 +9,7 @@ namespace Restaurant
     {
         public List<Order> orders = new List<Order>(6);
         public List<Order> completedOrder;
+        [SerializeField] private Tables tables;
 
         public override void Awake()
         {
@@ -43,8 +44,8 @@ namespace Restaurant
             {
                 completedOrder.Add(order);
                 EatTime(order);
-                TablesData.FreeAmount--;
-                TablesData.Update();
+                tables.data.freeAmount--;
+                tables.data.Update();
                 return;
             }
 
@@ -69,8 +70,8 @@ namespace Restaurant
             }
 
             EatTime(order);
-            TablesData.FreeAmount--;
-            TablesData.Update();
+            tables.data.freeAmount--;
+            tables.data.Update();
         }
 
         private void EatTime(Order order) => StartCoroutine(EatTime_c(order));
@@ -84,8 +85,8 @@ namespace Restaurant
         public void Clean(int index)
         {
             completedOrder[index] = null;
-            TablesData.FreeAmount++;
-            TablesData.Update();
+            tables.data.freeAmount++;
+            tables.data.Update();
         }
 
         public List<Order> GetOrdersData => orders;

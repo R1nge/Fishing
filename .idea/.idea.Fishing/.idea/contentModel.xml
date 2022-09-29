@@ -94,6 +94,7 @@
             <e p="Recipes.cs" t="Include" />
             <e p="Table.cs" t="Include" />
             <e p="TableManager.cs" t="Include" />
+            <e p="Tables.cs" t="Include" />
             <e p="TablesData.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="CookBookUI.cs" t="Include" />
