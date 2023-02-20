@@ -6,8 +6,6 @@ namespace FishingRod
 {
     public class HookCollision : MonoBehaviour
     {
-        [SerializeField] private Inventory inventory;
-
         public void Attach(Collider2D obj)
         {
             if (obj.TryGetComponent(out FishMovementController movementController))
@@ -18,6 +16,6 @@ namespace FishingRod
             }
         }
 
-        public void AddToInventory(IngredientSo fish) => inventory.Add(fish);
+        public void AddToInventory(IngredientSo fish) => Inventory.Instance.Add(fish);
     }
 }

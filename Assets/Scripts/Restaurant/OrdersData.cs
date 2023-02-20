@@ -7,7 +7,7 @@ namespace Restaurant
 {
     public class OrdersData : Singleton<OrdersData>
     {
-        public List<Order> orders = new List<Order>(6);
+        public List<Order> orders = new(6);
         public List<Order> completedOrder;
         [SerializeField] private Tables tables;
 

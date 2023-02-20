@@ -1,19 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using BayatGames.SaveGameFree;
-using UnityEngine;
+using Other;
 
 namespace Restaurant
 {
-    public class Inventory : MonoBehaviour
+    public class Inventory : Singleton<Inventory>
     {
-        //Use dictionary?
         public List<IngredientSo> fish;
-        private Data[] _data;
+        private Dictionary<string, Data> _data;
         private readonly string _identifier = "inventory";
 
-        private void Awake()
+        public override void Awake()
         {
+            base.Awake();
             if (SaveGame.Exists(_identifier))
                 Load();
             else
@@ -31,7 +31,7 @@ namespace Restaurant
                 fish.Add(newFish);
                 newFish.data.amount++;
             }
-        
+
             Save();
         }
 
@@ -45,11 +45,11 @@ namespace Restaurant
 
         private void Save()
         {
-            _data = new Data[fish.Count];
+            _data = new Dictionary<string, Data>(fish.Count);
 
             for (int i = 0; i < fish.Count; i++)
             {
-                _data[i] = fish[i].data;
+                _data[fish[i].title] = fish[i].data;
             }
 
             SaveGame.Save(_identifier, _data);
@@ -65,11 +65,14 @@ namespace Restaurant
 
         private void Load()
         {
-            _data = SaveGame.Load<Data[]>(_identifier);
+            _data = SaveGame.Load<Dictionary<string, Data>>(_identifier);
 
             for (int i = 0; i < fish.Count; i++)
             {
-                fish[i].data = _data[i];
+                if (_data.TryGetValue(fish[i].title, out Data data))
+                {
+                    fish[i].data = data;
+                }
             }
         }
 

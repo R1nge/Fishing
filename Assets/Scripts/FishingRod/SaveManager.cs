@@ -1,21 +1,24 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using BayatGames.SaveGameFree;
 using DanielLochner.Assets.SimpleScrollSnap;
+using Other;
 using UnityEngine;
 
 namespace FishingRod
 {
-    public class SaveManager : MonoBehaviour
+    public class SaveManager : Singleton<SaveManager>
     {
         [SerializeField] private FishingRodSo[] so;
-        private RodData[] _data;
+        private Dictionary<string, RodData> _rods;
         private readonly string _identifier = "rods";
         private SimpleScrollSnap _scroll;
 
-        private void Awake()
+        public override void Awake()
         {
+            base.Awake();
             _scroll = FindObjectOfType<SimpleScrollSnap>();
             if (SaveGame.Exists(_identifier))
                 Load();
@@ -25,14 +28,14 @@ namespace FishingRod
 
         private void Save()
         {
-            _data = new RodData[so.Length];
+            _rods = new Dictionary<string, RodData>(so.Length);
 
             for (int i = 0; i < so.Length; i++)
             {
-                _data[i] = so[i].data;
+                _rods[so[i].data.rodTitle] = so[i].data;
             }
 
-            SaveGame.Save(_identifier, _data);
+            SaveGame.Save(_identifier, _rods);
         }
 
         public void SaveCloud() => StartCoroutine(SaveCloud_c());
@@ -45,12 +48,15 @@ namespace FishingRod
 
         private void Load()
         {
-            _data = SaveGame.Load<RodData[]>(_identifier);
+            _rods = SaveGame.Load<Dictionary<string, RodData>>(_identifier);
 
             for (int i = 0; i < so.Length; i++)
             {
-                so[i].data = _data[i];
-                so[i].OnSpriteChanged += Save;
+                if (_rods.TryGetValue(so[i].data.rodTitle, out RodData data))
+                {
+                    so[i].data = data;
+                    so[i].OnSpriteChanged += Save;
+                }
             }
 
             ShowSelected();
