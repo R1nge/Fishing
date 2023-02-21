@@ -1,27 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace UI
 {
     public class InGameUI : MonoBehaviour
     {
-        [SerializeField] private GameObject play, pull, restaurant, shop;
+        [SerializeField] private UnityEvent onGameStarted, onGameEnded;
 
         private void Start() => ShowOutGameMenu();
 
-        public void ShowGamePlayMenu()
-        {
-            play.SetActive(false);
-            pull.SetActive(true);
-            restaurant.SetActive(false);
-            shop.SetActive(false);
-        }
+        public void ShowGamePlayMenu() => onGameStarted?.Invoke();
 
-        public void ShowOutGameMenu()
-        {
-            play.SetActive(true);
-            pull.SetActive(false);
-            restaurant.SetActive(true);
-            shop.SetActive(true);
-        }
+        public void ShowOutGameMenu() => onGameEnded?.Invoke();
     }
 }

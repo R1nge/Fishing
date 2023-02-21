@@ -7,9 +7,10 @@ namespace Restaurant
 {
     public class OrdersData : Singleton<OrdersData>
     {
-        public List<Order> orders = new(6);
-        public List<Order> completedOrder;
+        [SerializeField] private float minWaitTime, maxWaitTime;
         [SerializeField] private Tables tables;
+        [SerializeField] private List<Order> orders = new(6);
+        [SerializeField] private List<Order> completedOrder;
 
         public override void Awake()
         {
@@ -78,7 +79,7 @@ namespace Restaurant
 
         private IEnumerator EatTime_c(Order order)
         {
-            yield return new WaitForSeconds(Random.Range(2, 5));
+            yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime));
             order.SetStatus(true);
         }
 

@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea45e285e5364b2c88dfa5b4f4c60a7a, type: 3}
   m_Name: Dish2
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: f9abeaf427a92b8418ffe41af8e189f1, type: 3}
   title: Sashimi2
   price: 100

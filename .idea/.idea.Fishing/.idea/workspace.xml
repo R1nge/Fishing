@@ -25,34 +25,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Bootstrap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Bootstrap.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Transition.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Transition.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/link.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/TransitionImage.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/TransitionImage.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Transition.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Transition.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Tests.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/A Catverse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/A Catverse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/Catverse Spritesheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/Catverse Spritesheet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/Hisa Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/Hisa Logo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RestaurantTables.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RestaurantTables.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Shop.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/HookCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/HookCollision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/SaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/LoadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/LoadScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/DishSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/DishSo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/CookBookUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/CookBookUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TableUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TableUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free/item list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free/item list.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free/license.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,15 +142,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Build\Guess.exe" />
@@ -194,8 +196,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676891026912</updated>
-      <workItem from="1676891042628" duration="4271000" />
+      <workItem from="1676891042628" duration="7926000" />
+      <workItem from="1676965494833" duration="5752000" />
     </task>
+    <task id="LOCAL-00001" summary="[Refactor] Save system">
+      <created>1676896510886</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676896510886</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +228,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="scroll snap" />
     <MESSAGE value="added money, fishing rods" />
     <MESSAGE value="added fishing rod save manager" />
     <MESSAGE value="Added rod shop, fixed rods save manager, minor ui changes" />
@@ -242,52 +252,7 @@
     <MESSAGE value="Mentally destroyed" />
     <MESSAGE value="ZString, minor optimizations" />
     <MESSAGE value="[ADD] Timer Format (24,12)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Timer Format (24,12)" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1784" y="235" key="#Code_Folding" timestamp="1660734538041">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1784" y="235" key="#Code_Folding/0.0.2560.1410@0.0.2560.1410" timestamp="1660734538041" />
-    <state x="1028" y="534" key="#Notifications" timestamp="1663681696335">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1028" y="534" key="#Notifications/0.0.2560.1410@0.0.2560.1410" timestamp="1663681696335" />
-    <state x="1028" y="545" key="#Notifications/0.0.2560.1440@0.0.2560.1440" timestamp="1658427870718" />
-    <state x="973" y="507" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1659155282680">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="973" y="507" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1410@0.0.2560.1410" timestamp="1659155282680" />
-    <state x="1142" y="605" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1659027472055">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1142" y="605" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.2560.1410@0.0.2560.1410" timestamp="1659027472055" />
-    <state x="1114" y="406" key="RiderGenerateDialog" timestamp="1660650631099">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1114" y="406" key="RiderGenerateDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1660650631099" />
-    <state x="978" y="343" key="SettingsEditor" timestamp="1663431983722">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="978" y="343" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1663431983722" />
-    <state x="978" y="350" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1658130507046" />
-    <state x="92" y="92" width="2376" height="1226" key="VCS.FileHistoryDialog" timestamp="1661408804401">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="92" y="92" width="2376" height="1226" key="VCS.FileHistoryDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1661408804401" />
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2" timestamp="1664432565615">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="872" y="444" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1664432565615" />
-    <state x="872" y="453" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1658138959992" />
-    <state x="1097" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1663473338232">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1097" y="619" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410@0.0.2560.1410" timestamp="1663473338232" />
-    <state x="943" y="318" width="672" height="678" key="search.everywhere.popup" timestamp="1659467402388">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="943" y="318" width="672" height="678" key="search.everywhere.popup/0.0.2560.1410@0.0.2560.1410" timestamp="1659467402388" />
-    <state x="943" y="325" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1658077906777" />
+    <MESSAGE value="[Refactor] Save system" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor] Save system" />
   </component>
 </project>

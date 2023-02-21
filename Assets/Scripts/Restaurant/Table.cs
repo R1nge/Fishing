@@ -1,6 +1,7 @@
-﻿using System.Collections;
-using Restaurant.UI;
+﻿using System;
+using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Restaurant
 {
@@ -11,16 +12,14 @@ namespace Restaurant
         [SerializeField] private CustomerSprites customers;
         private CookingRecipeSo _current;
         private Recipes _recipes;
-        private TableUI _ui;
         private int _tolerance;
-        private bool _hasOrder;
         private int _index;
 
-        private void Awake()
-        {
-            _recipes = FindObjectOfType<Recipes>();
-            _ui = GetComponent<TableUI>();
-        }
+        public event Action<Sprite> OnOrderChangedEvent;
+        public event Action<Sprite> OnCustomerChangedEvent;
+        public event Action<int> OnToleranceChangedEvent;
+
+        private void Awake() => _recipes = FindObjectOfType<Recipes>();
 
         private void Start()
         {
@@ -37,10 +36,7 @@ namespace Restaurant
             {
                 _current = orders[index].GetRecipe();
                 _tolerance = orders[index].GetTolerance();
-                _ui.UpdateOrder(_current.name);
-                _ui.UpdateTolerance(_tolerance.ToString());
-                _ui.UpdateSprite(orders[index].GetCustomer());
-                _hasOrder = true;
+                OnOrderChanged(orders[index].GetCustomer(), _current.dish.sprite, _tolerance);
             }
             else
             {
@@ -50,9 +46,9 @@ namespace Restaurant
 
         private void DecreaseTolerance()
         {
-            if (!_hasOrder) return;
+            if (!HasOrder(_index)) return;
             _tolerance -= 1;
-            _ui.UpdateTolerance(_tolerance.ToString());
+            OnToleranceChangedEvent?.Invoke(_tolerance);
             OrdersData.Instance.GetOrdersData[_index].SetTolerance(_tolerance);
             if (_tolerance <= 0)
             {
@@ -62,13 +58,12 @@ namespace Restaurant
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!_hasOrder) return;
+            if (!HasOrder(_index)) return;
             if (other.TryGetComponent(out Dish dish))
             {
                 if (dish.GetDish().title == _current.dish.title)
                 {
                     //BUG: Can complete 2 orders simultaneously with one dish
-                    //Maybe fixed
                     Destroy(dish.gameObject);
                     CompleteOrder();
                 }
@@ -84,10 +79,7 @@ namespace Restaurant
         private IEnumerator Pick_c()
         {
             OrdersData.Instance.Remove(_index);
-            _ui.UpdateOrder(null);
-            _ui.UpdateTolerance(null);
-            _ui.UpdateSprite(null);
-            _hasOrder = false;
+            OnOrderChanged(null, null, 0);
             _current = null;
             yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime));
             Pick();
@@ -97,17 +89,32 @@ namespace Restaurant
         {
             _current = _recipes.Pick();
             PickTolerance();
-            _ui.UpdateOrder(_current.name);
-            _ui.UpdateTolerance(_tolerance.ToString());
-            _ui.UpdateSprite(customers.GetRandom());
+            CreateOrder();
+        }
+
+        private void CreateOrder()
+        {
             var order = new Order();
-            order.SetSprite(_ui.GetSprite());
+            order.SetSprite(customers.GetRandom());
             order.SetDish(_current.prefab.GetComponent<SpriteRenderer>().sprite);
             order.SetStatus(false);
             order.SetTolerance(_tolerance);
             order.SetRecipe(_current);
             OrdersData.Instance.Add(order, _index);
-            _hasOrder = true;
+            OnOrderChanged(order.GetCustomer(), order.GetDish(), order.GetTolerance());
+        }
+
+        private void OnOrderChanged(Sprite customer, Sprite dish, int tolerance)
+        {
+            OnCustomerChangedEvent?.Invoke(customer);
+            OnOrderChangedEvent?.Invoke(dish);
+            OnToleranceChangedEvent?.Invoke(tolerance);
+        }
+
+        private bool HasOrder(int index)
+        {
+            var order = OrdersData.Instance.GetOrdersData[index];
+            return order != null && order.GetRecipe() != null;
         }
 
         private void PickTolerance() => _tolerance = Random.Range(minTolerance, maxTolerance);

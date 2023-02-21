@@ -18,7 +18,8 @@ namespace Restaurant.UI
             _recipes = FindObjectOfType<Recipes>();
             Close();
         }
-
+        
+        //TODO: refactor
         public void Open()
         {
             if (cookBook.activeSelf) return;
@@ -30,7 +31,7 @@ namespace Restaurant.UI
                 instance.transform.position += new Vector3(0, -i * verticalDistance);
                 var result = instance.GetComponentInChildren<Image>();
                 result.sprite = _recipes.recipes[i].prefab.GetComponent<SpriteRenderer>().sprite;
-                instance.transform.Find("Name").GetComponent<TextMeshProUGUI>().text = _recipes.recipes[i].name;
+                instance.transform.Find("Name").GetComponent<TextMeshProUGUI>().text = _recipes.recipes[i].dish.title;
 
                 for (int j = 0; j < _recipes.recipes[i].ingredients.Count; j++)
                 {
