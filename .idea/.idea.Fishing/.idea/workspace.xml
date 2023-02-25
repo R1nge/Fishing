@@ -25,34 +25,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SceneController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SwipeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SwipeController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/Tests.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/A Catverse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/A Catverse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/Catverse Spritesheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/Catverse Spritesheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/Hisa Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hisa Cube Animal/Others/Hisa Logo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Table.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Singleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/DishSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/DishSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/CookBookUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/CookBookUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TableUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TableUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Dishes/Dish3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InGameUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free/item list.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free/item list.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/fishing_free/license.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MapCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MapCollision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/LoadScene.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/LoadScene.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Rods/CurrentRod.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Rods/CurrentRod.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ShopUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -66,13 +54,21 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/58/f79ce67f/Int16.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/UnityProjects/Fishing/Assets/Scripts/SwipeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Runtime/ResourceManager/Util/DelayedActionManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Runtime/ResourceManager/Util/MonoBehaviourCallbackHooks.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIElements/PanelEventHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -197,7 +193,8 @@
       <option name="presentableId" value="Default" />
       <updated>1676891026912</updated>
       <workItem from="1676891042628" duration="7926000" />
-      <workItem from="1676965494833" duration="5752000" />
+      <workItem from="1676965494833" duration="9487000" />
+      <workItem from="1677304591222" duration="10058000" />
     </task>
     <task id="LOCAL-00001" summary="[Refactor] Save system">
       <created>1676896510886</created>
@@ -206,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676896510886</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[Refactor] table, tableUI">
+      <created>1676971354443</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676971354443</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +232,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added money, fishing rods" />
     <MESSAGE value="added fishing rod save manager" />
     <MESSAGE value="Added rod shop, fixed rods save manager, minor ui changes" />
     <MESSAGE value="Added transition, inventory, hookCollision; Updated ui" />
@@ -253,6 +256,7 @@
     <MESSAGE value="ZString, minor optimizations" />
     <MESSAGE value="[ADD] Timer Format (24,12)" />
     <MESSAGE value="[Refactor] Save system" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Refactor] Save system" />
+    <MESSAGE value="[Refactor] table, table UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Refactor] table, table UI" />
   </component>
 </project>

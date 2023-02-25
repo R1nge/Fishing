@@ -1,5 +1,4 @@
-﻿using UI;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace FishingRod
 {
@@ -15,7 +14,6 @@ namespace FishingRod
         private Rigidbody2D _rigidbody2D;
         private DistanceJoint2D _joint;
         private HookCollision _collision;
-        private InGameUI _gameUI;
 
         private void Awake()
         {
@@ -23,24 +21,24 @@ namespace FishingRod
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _joint = GetComponent<DistanceJoint2D>();
             _collision = GetComponent<HookCollision>();
-            _gameUI = FindObjectOfType<InGameUI>();
         }
+
+        private void Start() => SwipeController.Instance.OnSwipeDownEvent += Throw;
 
         private void FixedUpdate() => Pull();
 
-        public void StartPulling() => _isPressed = true;
+        private void SetCanSwipe() => SwipeController.Instance.SetCanSwipe(_canThrow);
 
-        public void StopPulling() => _isPressed = false;
-
-        public void Throw()
+        private void Throw()
         {
             if (!_canThrow) return;
             _joint.distance = fishingRodSo.data.maxLength;
-            _rigidbody2D.AddForce(Vector2.right * fishingRodSo.data.horizontalSpeed);
+            _rigidbody2D.AddForce(Vector2.down * fishingRodSo.data.horizontalSpeed);
             _canCatch = true;
             _canThrow = false;
             _isPressed = false;
-            _gameUI.ShowGamePlayMenu();
+
+            SetCanSwipe();
         }
 
         private void Pull()
@@ -55,8 +53,8 @@ namespace FishingRod
             {
                 _canCatch = false;
                 _canThrow = true;
+                SetCanSwipe();
                 DestroyChildren();
-                _gameUI.ShowOutGameMenu();
             }
 
             if (transform.localPosition.x < 0 && _rigidbody2D.velocity != Vector2.zero)
@@ -83,6 +81,14 @@ namespace FishingRod
             foreach (Transform child in transform)
             {
                 Destroy(child.gameObject);
+            }
+        }
+
+        private void OnDestroy()
+        {
+            if (SwipeController.Instance)
+            {
+                SwipeController.Instance.OnSwipeDownEvent -= Throw;
             }
         }
     }

@@ -15,10 +15,10 @@ namespace Map
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (!other.transform.TryGetComponent(out LoadScene location)) return;
-            if (!_canCollide) return;
-            _movement.enabled = false;
-            location.LoadWithString();
+            // if (!other.transform.TryGetComponent(out LoadScene location)) return;
+            // if (!_canCollide) return;
+            // _movement.enabled = false;
+            // location.LoadWithString();
         }
 
         private IEnumerator EnableCollision()

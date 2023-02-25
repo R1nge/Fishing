@@ -22,5 +22,5 @@ MonoBehaviour:
     maxWeight: 1
     maxLength: 30
     verticalSpeed: 1
-    horizontalSpeed: 15000
+    horizontalSpeed: 15
     isUnlocked: 1
