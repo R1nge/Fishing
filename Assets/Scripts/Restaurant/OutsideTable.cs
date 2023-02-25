@@ -10,8 +10,13 @@ namespace Restaurant
         private MoneyManager _moneyManager;
         private Order _order;
         private int _index;
+        private OrdersData _ordersData;
 
-        private void Awake() => _moneyManager = FindObjectOfType<MoneyManager>();
+        private void Awake()
+        {
+            _moneyManager = FindObjectOfType<MoneyManager>();
+            _ordersData = GameObject.FindWithTag("GameManager").GetComponentInChildren<OrdersData>();
+        }
 
         public void SetIndex(int value) => _index = value;
 
@@ -23,7 +28,7 @@ namespace Restaurant
 
         private void OnMouseDown()
         {
-            var completeOrders = OrdersData.Instance.GetCompletedOrders;
+            var completeOrders = _ordersData.GetCompletedOrders;
             if (completeOrders.Count <= _index) return;
             if (completeOrders[_index] == null) return;
             if (completeOrders[_index].GetStatus())
@@ -32,7 +37,7 @@ namespace Restaurant
                 SetCustomer(null);
                 SetDish(null);
                 SetOrder(null);
-                OrdersData.Instance.Clean(_index);
+                _ordersData.Clean(_index);
             }
         }
     }

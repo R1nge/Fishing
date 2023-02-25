@@ -1,20 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Other;
 using UnityEngine;
 
 namespace Restaurant
 {
-    public class OrdersData : Singleton<OrdersData>
+    public class OrdersData : MonoBehaviour
     {
         [SerializeField] private float minWaitTime, maxWaitTime;
         [SerializeField] private Tables tables;
         [SerializeField] private List<Order> orders = new(6);
         [SerializeField] private List<Order> completedOrder;
 
-        public override void Awake()
+        private void Awake()
         {
-            base.Awake();
             for (int i = 0; i < orders.Capacity; i++)
             {
                 orders.Add(new Order());
@@ -23,7 +21,7 @@ namespace Restaurant
 
         public void Add(Order order, int index)
         {
-            if (Instance.orders.Count <= index)
+            if (orders.Count <= index)
             {
                 orders.Add(order);
             }

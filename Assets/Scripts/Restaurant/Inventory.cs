@@ -1,19 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using BayatGames.SaveGameFree;
-using Other;
+using UnityEngine;
 
 namespace Restaurant
 {
-    public class Inventory : Singleton<Inventory>
+    public class Inventory : MonoBehaviour
     {
         public List<IngredientSo> fish;
         private Dictionary<string, Data> _data;
         private readonly string _identifier = "inventory";
 
-        public override void Awake()
+        private void Awake()
         {
-            base.Awake();
             if (SaveGame.Exists(_identifier))
                 Load();
             else

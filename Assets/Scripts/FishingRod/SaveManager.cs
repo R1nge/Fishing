@@ -4,21 +4,19 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using BayatGames.SaveGameFree;
 using DanielLochner.Assets.SimpleScrollSnap;
-using Other;
 using UnityEngine;
 
 namespace FishingRod
 {
-    public class SaveManager : Singleton<SaveManager>
+    public class SaveManager : MonoBehaviour
     {
         [SerializeField] private FishingRodSo[] so;
         private Dictionary<string, RodData> _rods;
         private readonly string _identifier = "rods";
         private SimpleScrollSnap _scroll;
 
-        public override void Awake()
+        private void Awake()
         {
-            base.Awake();
             _scroll = FindObjectOfType<SimpleScrollSnap>();
             if (SaveGame.Exists(_identifier))
                 Load();

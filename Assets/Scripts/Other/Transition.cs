@@ -2,7 +2,7 @@
 
 namespace Other
 {
-    public class Transition : Singleton<Transition>
+    public class Transition : MonoBehaviour
     {
         [SerializeField] private Animator animator;
 

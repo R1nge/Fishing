@@ -7,12 +7,16 @@ namespace Restaurant
     {
         [SerializeField] private List<OutsideTable> outsideTables;
         [SerializeField] private Sprite moneySprite;
+        private OrdersData _ordersData;
+
+        private void Awake() =>
+            _ordersData = GameObject.FindWithTag("GameManager").GetComponentInChildren<OrdersData>();
 
         private void Start()
         {
-            for (int i = 0; i < OrdersData.Instance.GetCompletedOrders.Count; i++)
+            for (int i = 0; i < _ordersData.GetCompletedOrders.Count; i++)
             {
-                OrdersData.Instance.GetCompletedOrders[i].OnStatusChanged += Init;
+                _ordersData.GetCompletedOrders[i].OnStatusChanged += Init;
             }
 
             Init();
@@ -28,7 +32,7 @@ namespace Restaurant
                 outsideTables[i].SetDish(null);
             }
 
-            var completeOrders = OrdersData.Instance.GetCompletedOrders;
+            var completeOrders = _ordersData.GetCompletedOrders;
             for (int i = 0; i < completeOrders.Count; i++)
             {
                 if (completeOrders[i] == null) continue;
@@ -40,10 +44,10 @@ namespace Restaurant
 
         private void OnDestroy()
         {
-            if (OrdersData.Instance == null) return;
-            for (int i = 0; i < OrdersData.Instance.GetCompletedOrders.Count; i++)
+            if (_ordersData == null) return;
+            for (int i = 0; i < _ordersData.GetCompletedOrders.Count; i++)
             {
-                OrdersData.Instance.GetCompletedOrders[i].OnStatusChanged -= Init;
+                _ordersData.GetCompletedOrders[i].OnStatusChanged -= Init;
             }
         }
     }

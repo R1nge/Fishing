@@ -6,6 +6,10 @@ namespace FishingRod
 {
     public class HookCollision : MonoBehaviour
     {
+        private Inventory _inventory;
+
+        private void Awake() => _inventory = GameObject.FindWithTag("GameManager").GetComponentInChildren<Inventory>();
+
         public void Attach(Collider2D obj)
         {
             if (obj.TryGetComponent(out FishMovementController movementController))
@@ -16,6 +20,6 @@ namespace FishingRod
             }
         }
 
-        public void AddToInventory(IngredientSo fish) => Inventory.Instance.Add(fish);
+        public void AddToInventory(IngredientSo fish) => _inventory.Add(fish);
     }
 }

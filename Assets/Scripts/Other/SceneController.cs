@@ -1,61 +1,64 @@
 ﻿using System.Collections;
-using Other;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneController : Singleton<SceneController>
+namespace Other
 {
-    [SerializeField] private string[] sceneNames;
-    private byte _currentIndex;
-    private static readonly int StartAnim = Animator.StringToHash("Start");
-
-    private void Start()
+    public class SceneController : MonoBehaviour
     {
-        SwipeController.Instance.OnSwipeLeftEvent += OnSwipeLeft;
-        SwipeController.Instance.OnSwipeRightEvent += OnSwipeRight;
-    }
+        [SerializeField] private string[] sceneNames;
+        private byte _currentIndex;
+        private static readonly int StartAnim = Animator.StringToHash("Start");
+        private SwipeController _swipeController;
+        private Transition _transition;
 
-    private void OnSwipeLeft()
-    {
-        if (_currentIndex < sceneNames.Length - 1)
+        private void Awake()
         {
-            _currentIndex++;
-            LoadScene();
+            _swipeController = FindObjectOfType<SwipeController>();
+            _swipeController.OnSwipeLeftEvent += OnSwipeLeft;
+            _swipeController.OnSwipeRightEvent += OnSwipeRight;
+            _transition = GameObject.FindWithTag("GameManager").GetComponentInChildren<Transition>();
         }
-    }
 
-    private void OnSwipeRight()
-    {
-        if (_currentIndex > 0)
+        private void OnSwipeLeft()
         {
-            _currentIndex--;
-            LoadScene();
+            if (_currentIndex < sceneNames.Length - 1)
+            {
+                _currentIndex++;
+                LoadScene();
+            }
         }
-    }
 
-    private void LoadScene() => StartCoroutine(Load_c(sceneNames[_currentIndex]));
-
-    private IEnumerator Load_c(string title)
-    {
-        if (string.Equals(title, SceneManager.GetActiveScene().name)) yield break;
-        var transitionAnimator = Transition.Instance.GetAnimator();
-        transitionAnimator.SetTrigger(StartAnim);
-        yield return new WaitForSeconds(transitionAnimator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
-
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(title);
-
-        while (!asyncLoad.isDone)
+        private void OnSwipeRight()
         {
-            yield return null;
+            if (_currentIndex > 0)
+            {
+                _currentIndex--;
+                LoadScene();
+            }
         }
-    }
 
-    private void OnDestroy()
-    {
-        if (SwipeController.Instance)
+        private void LoadScene() => StartCoroutine(Load_c(sceneNames[_currentIndex]));
+
+        private IEnumerator Load_c(string title)
         {
-            SwipeController.Instance.OnSwipeLeftEvent -= OnSwipeLeft;
-            SwipeController.Instance.OnSwipeRightEvent -= OnSwipeRight;
+            if (string.Equals(title, SceneManager.GetActiveScene().name)) yield break;
+            var transitionAnimator = _transition.GetAnimator();
+            transitionAnimator.SetTrigger(StartAnim);
+            yield return new WaitForSeconds(transitionAnimator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(title);
+
+            while (!asyncLoad.isDone)
+            {
+                yield return null;
+            }
+        }
+
+        private void OnDestroy()
+        {
+            _swipeController.OnSwipeLeftEvent -= OnSwipeLeft;
+            _swipeController.OnSwipeRightEvent -= OnSwipeRight;
         }
     }
 }

@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Cysharp.Text;
 using TMPro;
 using UnityEngine;
 
 namespace Other
 {
-    public class Timer : Singleton<Timer>
+    public class Timer : MonoBehaviour
     {
         //TODO: Write unit test
         [SerializeField] private TextMeshProUGUI text;
@@ -23,9 +24,8 @@ namespace Other
             Hour24
         }
 
-        public override void Awake()
+        private void Awake()
         {
-            base.Awake();
             _yield = new WaitForSeconds(DELAY);
             StartCoroutine(Timer_c());
         }

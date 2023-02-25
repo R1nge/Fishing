@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Other;
+using UnityEngine;
 
 namespace FishingRod
 {
@@ -14,6 +15,7 @@ namespace FishingRod
         private Rigidbody2D _rigidbody2D;
         private DistanceJoint2D _joint;
         private HookCollision _collision;
+        private SwipeController _swipeController;
 
         private void Awake()
         {
@@ -21,13 +23,14 @@ namespace FishingRod
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _joint = GetComponent<DistanceJoint2D>();
             _collision = GetComponent<HookCollision>();
+            _swipeController = GameObject.FindWithTag("GameManager").GetComponentInChildren<SwipeController>();
         }
 
-        private void Start() => SwipeController.Instance.OnSwipeDownEvent += Throw;
+        private void Start() => _swipeController.OnSwipeDownEvent += Throw;
 
         private void FixedUpdate() => Pull();
 
-        private void SetCanSwipe() => SwipeController.Instance.SetCanSwipe(_canThrow);
+        private void SetCanSwipe() => _swipeController.SetCanSwipe(_canThrow);
 
         private void Throw()
         {
@@ -84,12 +87,6 @@ namespace FishingRod
             }
         }
 
-        private void OnDestroy()
-        {
-            if (SwipeController.Instance)
-            {
-                SwipeController.Instance.OnSwipeDownEvent -= Throw;
-            }
-        }
+        private void OnDestroy() => _swipeController.OnSwipeDownEvent -= Throw;
     }
 }

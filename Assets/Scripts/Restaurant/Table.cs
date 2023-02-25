@@ -14,12 +14,17 @@ namespace Restaurant
         private Recipes _recipes;
         private int _tolerance;
         private int _index;
+        private OrdersData _ordersData;
 
         public event Action<Sprite> OnOrderChangedEvent;
         public event Action<Sprite> OnCustomerChangedEvent;
         public event Action<int> OnToleranceChangedEvent;
 
-        private void Awake() => _recipes = FindObjectOfType<Recipes>();
+        private void Awake()
+        {
+            _recipes = FindObjectOfType<Recipes>();
+            _ordersData = GameObject.FindWithTag("GameManager").GetComponentInChildren<OrdersData>();
+        }
 
         private void Start()
         {
@@ -31,7 +36,7 @@ namespace Restaurant
 
         private void Init(int index)
         {
-            var orders = OrdersData.Instance.GetOrdersData;
+            var orders = _ordersData.GetOrdersData;
             if (orders.Count > index && orders[index] != null && orders[index].GetRecipe() != null)
             {
                 _current = orders[index].GetRecipe();
@@ -49,7 +54,7 @@ namespace Restaurant
             if (!HasOrder(_index)) return;
             _tolerance -= 1;
             OnToleranceChangedEvent?.Invoke(_tolerance);
-            OrdersData.Instance.GetOrdersData[_index].SetTolerance(_tolerance);
+            _ordersData.GetOrdersData[_index].SetTolerance(_tolerance);
             if (_tolerance <= 0)
             {
                 StartCoroutine(Pick_c());
@@ -72,13 +77,13 @@ namespace Restaurant
 
         private void CompleteOrder()
         {
-            OrdersData.Instance.Complete(OrdersData.Instance.GetOrdersData[_index]);
+            _ordersData.Complete(_ordersData.GetOrdersData[_index]);
             StartCoroutine(Pick_c());
         }
 
         private IEnumerator Pick_c()
         {
-            OrdersData.Instance.Remove(_index);
+            _ordersData.Remove(_index);
             OnOrderChanged(null, null, 0);
             _current = null;
             yield return new WaitForSeconds(Random.Range(minWaitTime, maxWaitTime));
@@ -100,7 +105,7 @@ namespace Restaurant
             order.SetStatus(false);
             order.SetTolerance(_tolerance);
             order.SetRecipe(_current);
-            OrdersData.Instance.Add(order, _index);
+            _ordersData.Add(order, _index);
             OnOrderChanged(order.GetCustomer(), order.GetDish(), order.GetTolerance());
         }
 
@@ -113,7 +118,7 @@ namespace Restaurant
 
         private bool HasOrder(int index)
         {
-            var order = OrdersData.Instance.GetOrdersData[index];
+            var order = _ordersData.GetOrdersData[index];
             return order != null && order.GetRecipe() != null;
         }
 
