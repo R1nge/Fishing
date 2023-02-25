@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using BayatGames.SaveGameFree;
 using UnityEngine;
 
@@ -7,8 +6,9 @@ namespace Restaurant
 {
     public class Inventory : MonoBehaviour
     {
-        public List<IngredientSo> fish;
+        [SerializeField] private List<IngredientSo> fish;
         private Dictionary<string, Data> _data;
+
         private readonly string _identifier = "inventory";
 
         private void Awake()
@@ -54,14 +54,6 @@ namespace Restaurant
             SaveGame.Save(_identifier, _data);
         }
 
-        public void SaveCloud() => StartCoroutine(SaveCloud_c());
-
-        private IEnumerator SaveCloud_c()
-        {
-            print("Inventory saved");
-            yield break;
-        }
-
         private void Load()
         {
             _data = SaveGame.Load<Dictionary<string, Data>>(_identifier);
@@ -74,17 +66,5 @@ namespace Restaurant
                 }
             }
         }
-
-        public void LoadCloud() => StartCoroutine(LoadCloud_c());
-
-        private IEnumerator LoadCloud_c()
-        {
-            print("Inventory loaded");
-            yield break;
-        }
-
-        private void OnDisable() => Save();
-
-        private void OnApplicationQuit() => Save();
     }
 }

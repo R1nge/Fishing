@@ -1,6 +1,7 @@
 using Fish;
 using Restaurant;
 using UnityEngine;
+using Zenject;
 
 namespace FishingRod
 {
@@ -8,7 +9,8 @@ namespace FishingRod
     {
         private Inventory _inventory;
 
-        private void Awake() => _inventory = GameObject.FindWithTag("GameManager").GetComponentInChildren<Inventory>();
+        [Inject]
+        public void Constructor(Inventory inventory) => _inventory = inventory;
 
         public void Attach(Collider2D obj)
         {

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Cysharp.Text;
 using TMPro;
 using UnityEngine;
@@ -8,7 +7,6 @@ namespace Other
 {
     public class Timer : MonoBehaviour
     {
-        //TODO: Write unit test
         [SerializeField] private TextMeshProUGUI text;
         [SerializeField] private Type timeType;
         private byte _hours;

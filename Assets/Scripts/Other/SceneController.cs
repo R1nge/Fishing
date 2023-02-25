@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Zenject;
 
 namespace Other
 {
@@ -12,12 +13,13 @@ namespace Other
         private SwipeController _swipeController;
         private Transition _transition;
 
-        private void Awake()
+        [Inject]
+        public void Constructor(SwipeController swipeController, Transition transition)
         {
-            _swipeController = FindObjectOfType<SwipeController>();
+            _swipeController = swipeController;
             _swipeController.OnSwipeLeftEvent += OnSwipeLeft;
             _swipeController.OnSwipeRightEvent += OnSwipeRight;
-            _transition = GameObject.FindWithTag("GameManager").GetComponentInChildren<Transition>();
+            _transition = transition;
         }
 
         private void OnSwipeLeft()

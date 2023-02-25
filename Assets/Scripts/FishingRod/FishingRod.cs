@@ -1,5 +1,6 @@
 ﻿using Other;
 using UnityEngine;
+using Zenject;
 
 namespace FishingRod
 {
@@ -17,16 +18,20 @@ namespace FishingRod
         private HookCollision _collision;
         private SwipeController _swipeController;
 
+        [Inject]
+        public void Constructor(SwipeController swipeController)
+        {
+            _swipeController = swipeController;
+            _swipeController.OnSwipeDownEvent += Throw;
+        }
+
         private void Awake()
         {
             _start = transform.position;
             _rigidbody2D = GetComponent<Rigidbody2D>();
             _joint = GetComponent<DistanceJoint2D>();
             _collision = GetComponent<HookCollision>();
-            _swipeController = GameObject.FindWithTag("GameManager").GetComponentInChildren<SwipeController>();
         }
-
-        private void Start() => _swipeController.OnSwipeDownEvent += Throw;
 
         private void FixedUpdate() => Pull();
 

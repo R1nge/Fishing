@@ -24,25 +24,33 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="Got rid from static singletons">
-      <change afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GameManager.cs.meta" afterDir="false" />
+    <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/InventoryInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/InventoryInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/OrderInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/OrderInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SaveManagerInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SaveManagerInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SceneControllerInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SceneControllerInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SwipeControllerInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SwipeControllerInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/TimerInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/TimerInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/TransitionInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/TransitionInstaller.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/HookCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/HookCollision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/SaveManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/SceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/SceneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/Sleep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Sleep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/SwipeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/SwipeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/Transition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Transition.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OrdersData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,26 +58,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/58/f79ce67f/Int16.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/UnityProjects/Fishing/Assets/Scenes/Bootstrap.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/UnityProjects/Fishing/Assets/Scripts/SwipeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Runtime/ResourceManager/Util/DelayedActionManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Runtime/ResourceManager/Util/MonoBehaviourCallbackHooks.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIElements/PanelEventHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://SceneSwipeController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -195,7 +200,8 @@
       <updated>1676891026912</updated>
       <workItem from="1676891042628" duration="7926000" />
       <workItem from="1676965494833" duration="9487000" />
-      <workItem from="1677304591222" duration="12308000" />
+      <workItem from="1677304591222" duration="16390000" />
+      <workItem from="1677335274807" duration="3347000" />
     </task>
     <task id="LOCAL-00001" summary="[Refactor] Save system">
       <created>1676896510886</created>
@@ -218,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677324012306</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Got rid from static singletons">
+      <created>1677326250098</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677326250098</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
