@@ -14,10 +14,7 @@ namespace Restaurant
         private OrdersData _ordersData;
 
         [Inject]
-        public void Constructor(OrdersData ordersData)
-        {
-            _ordersData = ordersData;
-        }
+        public void Constructor(OrdersData ordersData) => _ordersData = ordersData;
 
         private void Awake() => _moneyManager = FindObjectOfType<MoneyManager>();
 

@@ -1,4 +1,6 @@
-﻿using Other;
+﻿using System;
+using System.Diagnostics;
+using Other;
 using UnityEngine;
 using Zenject;
 
@@ -8,13 +10,11 @@ namespace FishingRod
     public class FishingRod : MonoBehaviour
     {
         [SerializeField] private FishingRodSo fishingRodSo;
-        private bool _canThrow = true;
-        private bool _isPressed;
-        private bool _canCatch;
-        private int _distance;
+        private bool _isThrown;
+        private bool _isGoingUp;
+        private float _distance;
         private Vector3 _start;
         private Rigidbody2D _rigidbody2D;
-        private DistanceJoint2D _joint;
         private HookCollision _collision;
         private SwipeController _swipeController;
 
@@ -29,67 +29,88 @@ namespace FishingRod
         {
             _start = transform.position;
             _rigidbody2D = GetComponent<Rigidbody2D>();
-            _joint = GetComponent<DistanceJoint2D>();
             _collision = GetComponent<HookCollision>();
         }
 
-        private void FixedUpdate() => Pull();
+        private void Update()
+        {
+            _distance = Vector2.Distance(_start, transform.position);
 
-        private void SetCanSwipe() => _swipeController.SetCanSwipe(_canThrow);
+            if (_distance >= fishingRodSo.data.maxLength)
+            {
+                if (!_isGoingUp)
+                {
+                    _rigidbody2D.velocity = Vector2.zero;
+                    _isGoingUp = true;
+                }
+            }
+        }
+
+        private void FixedUpdate()
+        {
+            if (_isGoingUp)
+            {
+                Pull();
+                MovePc();
+                MoveMobile();
+            }
+            else
+            {
+                if (_isThrown)
+                {
+                    _rigidbody2D.MovePosition(_rigidbody2D.position + Vector2.down * fishingRodSo.data.verticalSpeed);
+                }
+            }
+        }
 
         private void Throw()
         {
-            if (!_canThrow) return;
-            _joint.distance = fishingRodSo.data.maxLength;
-            _rigidbody2D.AddForce(Vector2.down * fishingRodSo.data.horizontalSpeed);
-            _canCatch = true;
-            _canThrow = false;
-            _isPressed = false;
-
+            _isThrown = true;
             SetCanSwipe();
         }
 
+        private void SetCanSwipe() => _swipeController.SetCanSwipe(!_isThrown);
+
         private void Pull()
         {
-            if (_canThrow || !_isPressed) return;
+            _rigidbody2D.MovePosition(_rigidbody2D.position + Vector2.up * fishingRodSo.data.verticalSpeed);
+            _distance -= fishingRodSo.data.verticalSpeed;
 
-            var distance = Vector2.Distance(_start, transform.position);
-            distance -= fishingRodSo.data.verticalSpeed;
-            _joint.distance = distance;
-
-            if (_joint.distance <= 0.31f)
+            if (_distance <= 0.31f)
             {
-                _canCatch = false;
-                _canThrow = true;
+                _isThrown = false;
+                _isGoingUp = false;
                 SetCanSwipe();
-                DestroyChildren();
             }
+        }
 
-            if (transform.localPosition.x < 0 && _rigidbody2D.velocity != Vector2.zero)
+        [Conditional("PLATFORM_ANDROID")]
+        private void MoveMobile()
+        {
+            if (!_isThrown)
             {
-                _rigidbody2D.velocity = Vector2.zero;
+               //TODO: move with gyro
+            }
+        }
+
+        [Conditional("PLATFORM_STANDALONE")]
+        private void MovePc()
+        {
+            if (!_isThrown)
+            {
+                //TODO: move after cursor
             }
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!_canCatch) return;
-
             if (other.TryGetComponent(out Fish.Fish fish))
             {
                 _collision.AddToInventory(fish.ingredient);
-                _canCatch = false;
+                _isGoingUp = true;
             }
 
             _collision.Attach(other);
-        }
-
-        private void DestroyChildren()
-        {
-            foreach (Transform child in transform)
-            {
-                Destroy(child.gameObject);
-            }
         }
 
         private void OnDestroy()

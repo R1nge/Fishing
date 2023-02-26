@@ -9,14 +9,8 @@ namespace Restaurant
         private SceneController _sceneController;
 
         [Inject]
-        public void Constructor(SceneController sceneController)
-        {
-            _sceneController = sceneController;
-        }
+        public void Constructor(SceneController sceneController) => _sceneController = sceneController;
 
-        public void LoadScene(string sceneName)
-        {
-            _sceneController.LoadSceneByName(sceneName);
-        }
+        public void LoadScene(string sceneName) => _sceneController.LoadSceneByName(sceneName);
     }
 }

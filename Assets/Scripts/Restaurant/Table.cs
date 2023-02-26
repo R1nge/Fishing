@@ -22,19 +22,14 @@ namespace Restaurant
         public event Action<int> OnToleranceChangedEvent;
 
         [Inject]
-        public void Constructor(OrdersData ordersData)
-        {
-            _ordersData = ordersData;
-            print("Inject");
-        }
+        public void Constructor(OrdersData ordersData) => _ordersData = ordersData;
 
         private void Awake() => _recipes = FindObjectOfType<Recipes>();
 
         private void Start()
         {
-            print("Init");
             Init(_index);
-            InvokeRepeating("DecreaseTolerance", 1, 1);
+            InvokeRepeating(nameof(DecreaseTolerance), 1, 1);
         }
 
         public void SetIndex(int index) => _index = index;

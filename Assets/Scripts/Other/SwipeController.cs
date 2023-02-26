@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using UnityEngine;
 
 namespace Other
@@ -28,6 +29,7 @@ namespace Other
             MobileInput();
         }
 
+        
         private void DesktopInput()
         {
             if (Input.GetMouseButtonDown(0))
@@ -43,6 +45,7 @@ namespace Other
             }
         }
 
+        [Conditional("PLATFORM_ANDROID")]
         private void MobileInput()
         {
             foreach (Touch touch in Input.touches)
