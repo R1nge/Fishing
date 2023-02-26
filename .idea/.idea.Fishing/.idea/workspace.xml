@@ -25,30 +25,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3823c583-5ddb-46ab-a7c9-bed928fc0eb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/InventoryInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/InventoryInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/OrderInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/OrderInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SaveManagerInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SaveManagerInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SceneControllerInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SceneControllerInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SwipeControllerInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/SwipeControllerInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/TimerInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/TimerInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/TransitionInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DI/TransitionInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Load.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Load.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fishing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ingredient.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ingredient.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Inventory.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Inventory.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Navbar.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Navbar.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/OrderManager.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/OrderManager.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sashimi.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sashimi.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sashimi2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sashimi2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sashimi3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sashimi3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sashimi4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sashimi4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SaveManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SaveManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Bootstrap.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Fishing.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Restaurant.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/RestaurantTables.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/RestaurantTables.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DI/OrderInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DI/OrderInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FishingRod/HookCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FishingRod/HookCollision.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/SceneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/SceneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Other/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/Singleton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Other/Singleton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/OutsideTableManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Restaurant/Table.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TimerUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Restaurant/UI/TimerUI.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -69,7 +76,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/58/f79ce67f/Int16.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FishingRod/FishingRod.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Restaurant/TablesData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Runtime/ResourceManager/Util/DelayedActionManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Runtime/ResourceManager/Util/MonoBehaviourCallbackHooks.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
@@ -201,7 +207,10 @@
       <workItem from="1676891042628" duration="7926000" />
       <workItem from="1676965494833" duration="9487000" />
       <workItem from="1677304591222" duration="16390000" />
-      <workItem from="1677335274807" duration="3347000" />
+      <workItem from="1677335274807" duration="8888000" />
+      <workItem from="1677345710335" duration="29000" />
+      <workItem from="1677348007439" duration="4239000" />
+      <workItem from="1677408603241" duration="2571000" />
     </task>
     <task id="LOCAL-00001" summary="[Refactor] Save system">
       <created>1676896510886</created>
@@ -231,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677326250098</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[ADD] Zenject">
+      <created>1677338744393</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677338744393</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +269,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added transition, inventory, hookCollision; Updated ui" />
     <MESSAGE value="Imported Savegamefree package" />
     <MESSAGE value="Refactored money and save managers" />
     <MESSAGE value="Inventory save, map, ui improvement" />
@@ -278,6 +293,7 @@
     <MESSAGE value="[Refactor] table, table UI" />
     <MESSAGE value="[ADD] swipe control" />
     <MESSAGE value="Got rid from static singletons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got rid from static singletons" />
+    <MESSAGE value="[ADD] Zenject" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Zenject" />
   </component>
 </project>

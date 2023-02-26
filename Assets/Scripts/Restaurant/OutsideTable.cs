@@ -1,5 +1,6 @@
 ﻿using Other;
 using UnityEngine;
+using Zenject;
 
 namespace Restaurant
 {
@@ -12,11 +13,13 @@ namespace Restaurant
         private int _index;
         private OrdersData _ordersData;
 
-        private void Awake()
+        [Inject]
+        public void Constructor(OrdersData ordersData)
         {
-            _moneyManager = FindObjectOfType<MoneyManager>();
-            _ordersData = GameObject.FindWithTag("GameManager").GetComponentInChildren<OrdersData>();
+            _ordersData = ordersData;
         }
+
+        private void Awake() => _moneyManager = FindObjectOfType<MoneyManager>();
 
         public void SetIndex(int value) => _index = value;
 

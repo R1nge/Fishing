@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 namespace Restaurant
 {
@@ -9,8 +10,11 @@ namespace Restaurant
         [SerializeField] private Sprite moneySprite;
         private OrdersData _ordersData;
 
-        private void Awake() =>
-            _ordersData = GameObject.FindWithTag("GameManager").GetComponentInChildren<OrdersData>();
+        [Inject]
+        public void Constructor(OrdersData ordersData)
+        {
+            _ordersData = ordersData;
+        }
 
         private void Start()
         {

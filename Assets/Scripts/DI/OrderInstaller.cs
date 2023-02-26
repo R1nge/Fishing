@@ -12,7 +12,7 @@ namespace DI
         {
             var orderInstance = Container.InstantiatePrefabForComponent<OrdersData>(order);
             Container.Bind<OrdersData>().FromInstance(orderInstance).AsSingle();
-            Container.QueueForInject(orderInstance);
+            Container.QueueForInject(order);
         }
     }
 }

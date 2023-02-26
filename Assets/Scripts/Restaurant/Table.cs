@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using Zenject;
 using Random = UnityEngine.Random;
 
 namespace Restaurant
@@ -20,14 +21,18 @@ namespace Restaurant
         public event Action<Sprite> OnCustomerChangedEvent;
         public event Action<int> OnToleranceChangedEvent;
 
-        private void Awake()
+        [Inject]
+        public void Constructor(OrdersData ordersData)
         {
-            _recipes = FindObjectOfType<Recipes>();
-            _ordersData = GameObject.FindWithTag("GameManager").GetComponentInChildren<OrdersData>();
+            _ordersData = ordersData;
+            print("Inject");
         }
+
+        private void Awake() => _recipes = FindObjectOfType<Recipes>();
 
         private void Start()
         {
+            print("Init");
             Init(_index);
             InvokeRepeating("DecreaseTolerance", 1, 1);
         }

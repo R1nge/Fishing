@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3526257603808308548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 834.88403, y: 1106.8342, z: 2.3646424}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a846f20cd540e485757d2d51058b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  identifier: rods
   so:
   - {fileID: 11400000, guid: b0a9b6c3e86082d46b0545fa75ee8013, type: 2}
   - {fileID: 11400000, guid: ba7639b559561df4781f4278bc9271e1, type: 2}

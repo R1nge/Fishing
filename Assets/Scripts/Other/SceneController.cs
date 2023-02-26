@@ -13,6 +13,12 @@ namespace Other
         private SwipeController _swipeController;
         private Transition _transition;
 
+        public void LoadSceneByName(string sceneName)
+        {
+            if (!isActiveAndEnabled) return;
+            StartCoroutine(Load_c(sceneName));
+        }
+
         [Inject]
         public void Constructor(SwipeController swipeController, Transition transition)
         {
@@ -40,7 +46,11 @@ namespace Other
             }
         }
 
-        private void LoadScene() => StartCoroutine(Load_c(sceneNames[_currentIndex]));
+        private void LoadScene()
+        {
+            if (!isActiveAndEnabled) return;
+            StartCoroutine(Load_c(sceneNames[_currentIndex]));
+        }
 
         private IEnumerator Load_c(string title)
         {

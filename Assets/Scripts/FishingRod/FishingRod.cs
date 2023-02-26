@@ -92,6 +92,12 @@ namespace FishingRod
             }
         }
 
-        private void OnDestroy() => _swipeController.OnSwipeDownEvent -= Throw;
+        private void OnDestroy()
+        {
+            if (_swipeController)
+            {
+                _swipeController.OnSwipeDownEvent -= Throw;
+            }
+        }
     }
 }
